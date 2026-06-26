@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>vLLM Force-Merge Stats</title>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+<style>
+  :root {
+    --bg: #0d1117; --panel: #161b22; --border: #30363d;
+    --fg: #e6edf3; --muted: #8b949e; --accent: #f78166; --ok: #3fb950;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--bg); color: var(--fg);
+    font: 15px/1.5 -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+  }
+  .wrap { max-width: 980px; margin: 0 auto; padding: 32px 20px 64px; }
+  h1 { font-size: 26px; margin: 0 0 4px; }
+  h2 { font-size: 16px; margin: 36px 0 12px; color: var(--muted); font-weight: 600;
+       text-transform: uppercase; letter-spacing: .04em; }
+  a { color: #58a6ff; text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  .sub { color: var(--muted); margin: 0 0 8px; }
+  .note { color: var(--muted); font-size: 13px; background: var(--panel);
+          border: 1px solid var(--border); border-radius: 8px; padding: 10px 14px; margin-top: 14px; }
+  .cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 14px; }
+  .card { background: var(--panel); border: 1px solid var(--border); border-radius: 10px; padding: 18px; }
+  .card .label { color: var(--muted); font-size: 13px; }
+  .card .pct { font-size: 38px; font-weight: 700; margin: 6px 0 2px; color: var(--accent); }
+  .card .counts { color: var(--muted); font-size: 13px; }
+  .panel { background: var(--panel); border: 1px solid var(--border); border-radius: 10px; padding: 18px; }
+  table { width: 100%; border-collapse: collapse; font-size: 14px; }
+  th, td { text-align: left; padding: 8px 10px; border-bottom: 1px solid var(--border); }
+  th { color: var(--muted); font-weight: 600; }
+  td.num { white-space: nowrap; color: var(--muted); }
+  .footer { color: var(--muted); font-size: 12px; margin-top: 40px; }
+  .err { color: var(--accent); }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>vLLM Force-Merge Stats</h1>
+  <p class="sub">
+    How often pull requests in
+    <a href="https://github.com/vllm-project/vllm" target="_blank" rel="noopener">vllm-project/vllm</a>
+    are force-merged.
+  </p>
+  <div class="note">
+    A <strong>force-merge</strong> is a merge performed by the <code>vllm-bot</code> account,
+    which lead maintainers use to override CI when a failure is unrelated to the PR
+    (<a href="https://docs.vllm.ai/en/latest/governance/process/" target="_blank" rel="noopener">governance docs</a>).
+    Every PR is squash-merged, so this is detected via GitHub's <code>mergedBy</code> field, not git history.
+  </div>
+
+  <div id="content" style="display:none">
+    <h2>Force-merge rate</h2>
+    <div class="cards" id="cards"></div>
+
+    <h2>Weekly force-merge rate</h2>
+    <div class="panel"><canvas id="rateChart" height="110"></canvas></div>
+
+    <h2>Weekly merge volume</h2>
+    <div class="panel"><canvas id="volChart" height="110"></canvas></div>
+
+    <h2>Most force-merged authors (6 months)</h2>
+    <p class="sub" style="margin-top:-4px">
+      PR <em>authors</em> whose pull requests were force-merged — not who performed the merge
+      (force-merges are always executed by <code>vllm-bot</code> on a maintainer's behalf).
+    </p>
+    <div class="panel"><canvas id="authorChart" height="160"></canvas></div>
+
+    <h2>Recent force-merged PRs</h2>
+    <div class="panel" style="padding:0;overflow:auto">
+      <table id="recent"><thead><tr>
+        <th>PR</th><th>Title</th><th>Author</th><th class="num">Merged</th>
+      </tr></thead><tbody></tbody></table>
+    </div>
+
+    <p class="footer" id="footer"></p>
+  </div>
+
+  <p id="status">Loading data…</p>
+</div>
+
+<script>
+const DAY = 86400000;
+const WINDOWS = [
+  { label: "Last 7 days", days: 7 },
+  { label: "Last 30 days", days: 30 },
+  { label: "Last 90 days", days: 90 },
+  { label: "Last 6 months", days: 182 },
+];
+
+const COL = { fg: "#e6edf3", muted: "#8b949e", accent: "#f78166", ok: "#3fb950", grid: "#30363d" };
+Chart.defaults.color = COL.muted;
+Chart.defaults.borderColor = COL.grid;
+Chart.defaults.font.family = getComputedStyle(document.body).fontFamily;
+
+function pct(n, d) { return d ? (100 * n / d) : 0; }
+function fmtDate(iso) { return iso.slice(0, 10); }
+
+// Monday-anchored week key (YYYY-MM-DD of that Monday), UTC.
+function weekKey(date) {
+  const d = new Date(Date.UTC(date.getUTCFullYear(), date.getUTCMonth(), date.getUTCDate()));
+  const dow = (d.getUTCDay() + 6) % 7; // Mon=0
+  d.setUTCDate(d.getUTCDate() - dow);
+  return d.toISOString().slice(0, 10);
+}
+
+function renderCards(records, now) {
+  const el = document.getElementById("cards");
+  for (const w of WINDOWS) {
+    const cutoff = now - w.days * DAY;
+    const inWin = records.filter(r => r.mergedMs >= cutoff);
+    const forced = inWin.filter(r => r.force_merged).length;
+    const p = pct(forced, inWin.length);
+    const div = document.createElement("div");
+    div.className = "card";
+    div.innerHTML =
+      `<div class="label">${w.label}</div>` +
+      `<div class="pct">${p.toFixed(1)}%</div>` +
+      `<div class="counts">${forced} of ${inWin.length} PRs</div>`;
+    el.appendChild(div);
+  }
+}
+
+function weeklySeries(records) {
+  const buckets = new Map(); // weekKey -> {total, forced}
+  for (const r of records) {
+    const k = weekKey(new Date(r.mergedMs));
+    const b = buckets.get(k) || { total: 0, forced: 0 };
+    b.total++; if (r.force_merged) b.forced++;
+    buckets.set(k, b);
+  }
+  const keys = [...buckets.keys()].sort();
+  // Drop the leading partial week so the first bar isn't artificially small.
+  if (keys.length > 1) keys.shift();
+  return keys.map(k => ({ week: k, ...buckets.get(k) }));
+}
+
+function renderCharts(records) {
+  const series = weeklySeries(records);
+  const labels = series.map(s => s.week);
+
+  new Chart(document.getElementById("rateChart"), {
+    type: "line",
+    data: { labels, datasets: [{
+      label: "% force-merged",
+      data: series.map(s => pct(s.forced, s.total)),
+      borderColor: COL.accent, backgroundColor: "rgba(247,129,102,.15)",
+      fill: true, tension: .25, pointRadius: 2,
+    }]},
+    options: { plugins: { legend: { display: false } },
+      scales: { y: { beginAtZero: true, ticks: { callback: v => v + "%" } } } },
+  });
+
+  new Chart(document.getElementById("volChart"), {
+    type: "bar",
+    data: { labels, datasets: [
+      { label: "Normal", data: series.map(s => s.total - s.forced), backgroundColor: COL.ok },
+      { label: "Force-merged", data: series.map(s => s.forced), backgroundColor: COL.accent },
+    ]},
+    options: { scales: { x: { stacked: true }, y: { stacked: true, beginAtZero: true } } },
+  });
+
+  const byAuthor = {};
+  for (const r of records) if (r.force_merged && r.author)
+    byAuthor[r.author] = (byAuthor[r.author] || 0) + 1;
+  const top = Object.entries(byAuthor).sort((a, b) => b[1] - a[1]).slice(0, 15);
+  new Chart(document.getElementById("authorChart"), {
+    type: "bar",
+    data: { labels: top.map(t => t[0]), datasets: [{
+      label: "force-merged PRs", data: top.map(t => t[1]), backgroundColor: COL.accent }]},
+    options: { indexAxis: "y", plugins: { legend: { display: false } },
+      scales: { x: { beginAtZero: true } } },
+  });
+}
+
+function renderRecent(records) {
+  const tbody = document.querySelector("#recent tbody");
+  const forced = records.filter(r => r.force_merged).slice(0, 30);
+  for (const r of forced) {
+    const tr = document.createElement("tr");
+    tr.innerHTML =
+      `<td class="num"><a href="${r.url}" target="_blank" rel="noopener">#${r.number}</a></td>` +
+      `<td>${escapeHtml(r.title)}</td>` +
+      `<td class="num">${r.author ? escapeHtml(r.author) : "—"}</td>` +
+      `<td class="num">${fmtDate(r.mergedAt)}</td>`;
+    tbody.appendChild(tr);
+  }
+}
+
+function escapeHtml(s) {
+  return s.replace(/[&<>"']/g, c =>
+    ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
+}
+
+fetch("data.json")
+  .then(r => { if (!r.ok) throw new Error(r.status); return r.json(); })
+  .then(data => {
+    const records = data.records.map(r => ({ ...r, mergedMs: Date.parse(r.mergedAt) }));
+    const now = Date.now();
+    renderCards(records, now);
+    renderCharts(records);
+    renderRecent(records);
+    document.getElementById("footer").textContent =
+      `${records.length} merged PRs analysed · data generated ${data.generated_at} · ` +
+      `detection: mergedBy == "${data.force_merge_login}"`;
+    document.getElementById("status").style.display = "none";
+    document.getElementById("content").style.display = "block";
+  })
+  .catch(err => {
+    document.getElementById("status").innerHTML =
+      `<span class="err">Failed to load data.json (${err.message}).</span> ` +
+      `Run <code>python3 fetch.py</code> first, and serve over HTTP (not file://).`;
+  });
+</script>
+</body>
+</html>

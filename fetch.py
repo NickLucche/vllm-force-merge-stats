@@ -21,6 +21,7 @@ Usage:
 import argparse
 import datetime as dt
 import json
+import os
 import subprocess
 import sys
 import urllib.request
@@ -51,10 +52,14 @@ query($q: String!, $cursor: String) {
 
 
 def gh_token() -> str:
+    """Token from GITHUB_TOKEN/GH_TOKEN (CI) or `gh auth token` (local)."""
+    tok = os.environ.get("GITHUB_TOKEN") or os.environ.get("GH_TOKEN")
+    if tok:
+        return tok
     try:
         return subprocess.check_output(["gh", "auth", "token"], text=True).strip()
     except (subprocess.CalledProcessError, FileNotFoundError) as exc:
-        sys.exit(f"Could not get GitHub token via `gh auth token`: {exc}")
+        sys.exit(f"No GITHUB_TOKEN/GH_TOKEN env and `gh auth token` failed: {exc}")
 
 
 def graphql(token: str, variables: dict) -> dict:

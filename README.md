@@ -3,6 +3,8 @@
 A tiny static dashboard showing how often pull requests in
 [vllm-project/vllm](https://github.com/vllm-project/vllm) are **force-merged**.
 
+**🔗 Live dashboard: https://nicklucche.github.io/vllm-force-merge-stats/**
+
 ## What is a "force-merge"?
 
 A force-merge is a merge performed by the **`vllm-bot`** account. Lead maintainers
@@ -54,10 +56,22 @@ rollup state at merge time (`statusCheckRollup`), at extra API cost.
 | `data.json` | Generated dataset (one record per merged PR). |
 | `index.html` | Static dashboard; computes the time-window stats in the browser. |
 
-## Refreshing the data
+## Automated updates
+
+A GitHub Action ([`.github/workflows/update-data.yml`](.github/workflows/update-data.yml))
+refreshes `data.json` **daily at 06:17 UTC** and commits it back to `main`, which
+republishes the Pages site automatically. It uses the built-in `GITHUB_TOKEN` —
+no secrets to configure. You can also trigger it on demand from the repo's
+**Actions** tab → *Update force-merge data* → *Run workflow*.
+
+> **Note:** GitHub disables scheduled workflows after 60 days of repo inactivity.
+> Any manual run or commit re-arms the schedule.
+
+## Refreshing the data manually
 
 Requires the [GitHub CLI](https://cli.github.com/) logged in (`gh auth login`) —
-the script reads your token via `gh auth token`, so no token handling is needed.
+the script reads your token via `gh auth token` (or a `GITHUB_TOKEN`/`GH_TOKEN`
+env var), so no token handling is needed.
 
 ```bash
 python3 fetch.py            # last 182 days (~6 months), the default

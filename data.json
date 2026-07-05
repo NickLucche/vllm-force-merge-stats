@@ -1,9 +1,144 @@
 {
- "generated_at": "2026-07-04T09:03:30Z",
+ "generated_at": "2026-07-05T09:25:02Z",
  "repo": "vllm-project/vllm",
  "force_merge_login": "vllm-bot",
- "window_start": "2026-01-03",
+ "window_start": "2026-01-04",
  "records": [
+  {
+   "number": 47609,
+   "title": "[Bugfix][TurboQuant] Preserve KV cache dtype in backend shape",
+   "url": "https://github.com/vllm-project/vllm/pull/47609",
+   "mergedAt": "2026-07-05T08:20:48Z",
+   "author": "LucasWilkinson",
+   "mergedBy": "mgoin",
+   "force_merged": false
+  },
+  {
+   "number": 47590,
+   "title": "[Bugfix][Pooling] Forward instruction to Jina reranker scoring prompts",
+   "url": "https://github.com/vllm-project/vllm/pull/47590",
+   "mergedAt": "2026-07-05T05:39:13Z",
+   "author": "Sunt-ing",
+   "mergedBy": "noooop",
+   "force_merged": false
+  },
+  {
+   "number": 47332,
+   "title": "[Bugfix][Gemma4] Fix FA4 mm_prefix mask: add sliding window and absolute q_idx",
+   "url": "https://github.com/vllm-project/vllm/pull/47332",
+   "mergedAt": "2026-07-05T00:46:41Z",
+   "author": "lucianommartins",
+   "mergedBy": "ywang96",
+   "force_merged": false
+  },
+  {
+   "number": 47337,
+   "title": "[Bugfix][Model] Allow Run:ai memory_limit sentinel values",
+   "url": "https://github.com/vllm-project/vllm/pull/47337",
+   "mergedAt": "2026-07-05T00:08:34Z",
+   "author": "Sunt-ing",
+   "mergedBy": "DarkLight1337",
+   "force_merged": false
+  },
+  {
+   "number": 47519,
+   "title": "[ROCm][CI] Fix Kernels and Kernels attention test failures",
+   "url": "https://github.com/vllm-project/vllm/pull/47519",
+   "mergedAt": "2026-07-04T20:59:52Z",
+   "author": "cpersson-amd",
+   "mergedBy": "AndreasKaratzas",
+   "force_merged": false
+  },
+  {
+   "number": 47597,
+   "title": "[Bugfix][Frontend] Preserve default sampling params in batch chat",
+   "url": "https://github.com/vllm-project/vllm/pull/47597",
+   "mergedAt": "2026-07-04T19:06:39Z",
+   "author": "Sunt-ing",
+   "mergedBy": "DarkLight1337",
+   "force_merged": false
+  },
+  {
+   "number": 47198,
+   "title": "[Perf] Remove redundant op for GLM 5.2",
+   "url": "https://github.com/vllm-project/vllm/pull/47198",
+   "mergedAt": "2026-07-04T17:25:03Z",
+   "author": "yewentao256",
+   "mergedBy": "yewentao256",
+   "force_merged": false
+  },
+  {
+   "number": 47379,
+   "title": "[Bugfix][Frontend][gpt-oss] Recover raw tail when Harmony parser ends non-terminal",
+   "url": "https://github.com/vllm-project/vllm/pull/47379",
+   "mergedAt": "2026-07-04T14:46:24Z",
+   "author": "yzong-rh",
+   "mergedBy": "mgoin",
+   "force_merged": false
+  },
+  {
+   "number": 47551,
+   "title": "[CI] Bump `huggingface-hub` from `v1.10.2` to `v1.22.0`",
+   "url": "https://github.com/vllm-project/vllm/pull/47551",
+   "mergedAt": "2026-07-04T14:45:46Z",
+   "author": "hmellor",
+   "mergedBy": "vllm-bot",
+   "force_merged": true
+  },
+  {
+   "number": 46966,
+   "title": "[Misc] Validate Pooling cache_salt Values",
+   "url": "https://github.com/vllm-project/vllm/pull/46966",
+   "mergedAt": "2026-07-04T14:19:29Z",
+   "author": "taneem-ibrahim",
+   "mergedBy": "yewentao256",
+   "force_merged": false
+  },
+  {
+   "number": 47333,
+   "title": "[Misc] Update request-extras parity for batch chat completion",
+   "url": "https://github.com/vllm-project/vllm/pull/47333",
+   "mergedAt": "2026-07-04T14:19:04Z",
+   "author": "taneem-ibrahim",
+   "mergedBy": "yewentao256",
+   "force_merged": false
+  },
+  {
+   "number": 46939,
+   "title": "[Misc] Forward request-level prompt extras for cross-encoder scoring",
+   "url": "https://github.com/vllm-project/vllm/pull/46939",
+   "mergedAt": "2026-07-04T14:18:36Z",
+   "author": "taneem-ibrahim",
+   "mergedBy": "yewentao256",
+   "force_merged": false
+  },
+  {
+   "number": 47082,
+   "title": "[Misc] Preserve cross-encoder pooling extra kwargs",
+   "url": "https://github.com/vllm-project/vllm/pull/47082",
+   "mergedAt": "2026-07-04T12:14:13Z",
+   "author": "taneem-ibrahim",
+   "mergedBy": "yewentao256",
+   "force_merged": false
+  },
+  {
+   "number": 43645,
+   "title": "[XPU] Add W8A8 FP8 linear kernel with multi-granularity quant support",
+   "url": "https://github.com/vllm-project/vllm/pull/43645",
+   "mergedAt": "2026-07-04T10:10:02Z",
+   "author": "chaojun-zhang",
+   "mergedBy": "jikunshang",
+   "force_merged": false
+  },
+  {
+   "number": 44297,
+   "title": "[Bugfix][Structured Output][Spec Decode] Constrain bitmask and trim grammar advance at the reasoning boundary",
+   "url": "https://github.com/vllm-project/vllm/pull/44297",
+   "mergedAt": "2026-07-04T09:08:46Z",
+   "author": "yuyue0225sc",
+   "mergedBy": "benchislett",
+   "force_merged": false
+  },
   {
    "number": 45844,
    "title": "[Bugfix] Fix CPU split-KV scratchpad sizing",
@@ -52013,33 +52148,6 @@
    "mergedAt": "2026-01-04T03:31:29Z",
    "author": "reaganjlee",
    "mergedBy": "chaunceyjiang",
-   "force_merged": false
-  },
-  {
-   "number": 31533,
-   "title": "[MoE Refactor][13/N] Convert FI to Use PFNoEP",
-   "url": "https://github.com/vllm-project/vllm/pull/31533",
-   "mergedAt": "2026-01-03T20:26:37Z",
-   "author": "robertgshaw2-redhat",
-   "mergedBy": "vllm-bot",
-   "force_merged": true
-  },
-  {
-   "number": 31630,
-   "title": "[CI][Bugfix] Fix token counting in chunked prefill compl test",
-   "url": "https://github.com/vllm-project/vllm/pull/31630",
-   "mergedAt": "2026-01-03T06:28:49Z",
-   "author": "AndreasKaratzas",
-   "mergedBy": "DarkLight1337",
-   "force_merged": false
-  },
-  {
-   "number": 29255,
-   "title": "Improve HF qwen3_omni: preserve audio_sample_rate in kwargs restructuring",
-   "url": "https://github.com/vllm-project/vllm/pull/29255",
-   "mergedAt": "2026-01-03T04:31:09Z",
-   "author": "jeremyteboul",
-   "mergedBy": "Isotr0py",
    "force_merged": false
   }
  ]

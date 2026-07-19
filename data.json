@@ -1,9 +1,99 @@
 {
- "generated_at": "2026-07-18T08:12:04Z",
+ "generated_at": "2026-07-19T08:35:46Z",
  "repo": "vllm-project/vllm",
  "force_merge_login": "vllm-bot",
- "window_start": "2026-01-17",
+ "window_start": "2026-01-18",
  "records": [
+  {
+   "number": 46570,
+   "title": "[Core] Add MRV2 virtual-batch PCP for MLA",
+   "url": "https://github.com/vllm-project/vllm/pull/46570",
+   "mergedAt": "2026-07-19T02:53:16Z",
+   "author": "LucasWilkinson",
+   "mergedBy": "MatthewBonanni",
+   "force_merged": false
+  },
+  {
+   "number": 49046,
+   "title": "[Multimodal] Automatically fallback to ViT DP when TP is unavailable",
+   "url": "https://github.com/vllm-project/vllm/pull/49046",
+   "mergedAt": "2026-07-18T21:41:04Z",
+   "author": "Isotr0py",
+   "mergedBy": "ywang96",
+   "force_merged": false
+  },
+  {
+   "number": 49055,
+   "title": "[ROCm][CI] Ensure sliding window tests release GPU memory",
+   "url": "https://github.com/vllm-project/vllm/pull/49055",
+   "mergedAt": "2026-07-18T20:44:05Z",
+   "author": "AndreasKaratzas",
+   "mergedBy": "tjtanaa",
+   "force_merged": false
+  },
+  {
+   "number": 49015,
+   "title": "[Bugfix] Qwen3-VL/Qwen-Omni: honor max_pixels/min_pixels for video prompts",
+   "url": "https://github.com/vllm-project/vllm/pull/49015",
+   "mergedAt": "2026-07-18T17:29:11Z",
+   "author": "lishunyang12",
+   "mergedBy": "ywang96",
+   "force_merged": false
+  },
+  {
+   "number": 48535,
+   "title": "[Front-end] [Messages] Populate `num_cache_creation_tokens`",
+   "url": "https://github.com/vllm-project/vllm/pull/48535",
+   "mergedAt": "2026-07-18T17:04:36Z",
+   "author": "yzong-rh",
+   "mergedBy": "tlrmchlsmth",
+   "force_merged": false
+  },
+  {
+   "number": 46832,
+   "title": "[ROCm][DSv3.2][Perf] Cap sparse MLA decode KV-splits with a work-per-split heuristic",
+   "url": "https://github.com/vllm-project/vllm/pull/46832",
+   "mergedAt": "2026-07-18T16:39:37Z",
+   "author": "frida-andersson",
+   "mergedBy": "tjtanaa",
+   "force_merged": false
+  },
+  {
+   "number": 43164,
+   "title": "[ci] Move 3 entrypoints tests to h200_35gb queue",
+   "url": "https://github.com/vllm-project/vllm/pull/43164",
+   "mergedAt": "2026-07-18T15:43:49Z",
+   "author": "khluu",
+   "mergedBy": "vllm-bot",
+   "force_merged": true
+  },
+  {
+   "number": 48988,
+   "title": "[Bugfix] Bump tml-fa4 for cutlass-dsl 4.6 API compatibility",
+   "url": "https://github.com/vllm-project/vllm/pull/48988",
+   "mergedAt": "2026-07-18T12:59:33Z",
+   "author": "mgoin",
+   "mergedBy": "vllm-bot",
+   "force_merged": true
+  },
+  {
+   "number": 48496,
+   "title": "Remove even more unnecessary `load_weights` methods",
+   "url": "https://github.com/vllm-project/vllm/pull/48496",
+   "mergedAt": "2026-07-18T08:40:27Z",
+   "author": "hmellor",
+   "mergedBy": "hmellor",
+   "force_merged": false
+  },
+  {
+   "number": 48025,
+   "title": "[Bugfix] Re-sync parameter tp_rank after process_weights_after_loading (fix replicated / disable_tp weight reload)",
+   "url": "https://github.com/vllm-project/vllm/pull/48025",
+   "mergedAt": "2026-07-18T08:40:06Z",
+   "author": "alexxu-roblox",
+   "mergedBy": "Isotr0py",
+   "force_merged": false
+  },
   {
    "number": 48110,
    "title": "[Perf][Hybrid] Vectorize _copy_mamba_state_block to uint64 for temporal",
@@ -52499,78 +52589,6 @@
    "mergedAt": "2026-01-18T02:36:11Z",
    "author": "Harry-Chen",
    "mergedBy": "khluu",
-   "force_merged": false
-  },
-  {
-   "number": 31492,
-   "title": "[CI/Build][Docker] Add centralized version manifest for Docker builds",
-   "url": "https://github.com/vllm-project/vllm/pull/31492",
-   "mergedAt": "2026-01-17T13:45:30Z",
-   "author": "mritunjaysharma394",
-   "mergedBy": "ywang96",
-   "force_merged": false
-  },
-  {
-   "number": 32411,
-   "title": "[Misc] Fix typo: seperator -> separator in flashmla_sparse.py",
-   "url": "https://github.com/vllm-project/vllm/pull/32411",
-   "mergedAt": "2026-01-17T12:18:31Z",
-   "author": "T1mn",
-   "mergedBy": "LucasWilkinson",
-   "force_merged": false
-  },
-  {
-   "number": 32385,
-   "title": "[Model] Molmo2: Enable quantized weight mapping for vision backbone",
-   "url": "https://github.com/vllm-project/vllm/pull/32385",
-   "mergedAt": "2026-01-17T09:33:06Z",
-   "author": "George-Polya",
-   "mergedBy": "ywang96",
-   "force_merged": false
-  },
-  {
-   "number": 29063,
-   "title": "[Models] Lfm2Moe: minor name changes for resolving lora conflicts",
-   "url": "https://github.com/vllm-project/vllm/pull/29063",
-   "mergedAt": "2026-01-17T06:12:55Z",
-   "author": "paulpak58",
-   "mergedBy": "ywang96",
-   "force_merged": false
-  },
-  {
-   "number": 31032,
-   "title": "[CI] Implement uploading to PyPI and GitHub in the release pipeline, enable release image building for CUDA 13.0",
-   "url": "https://github.com/vllm-project/vllm/pull/31032",
-   "mergedAt": "2026-01-17T04:52:33Z",
-   "author": "Harry-Chen",
-   "mergedBy": "khluu",
-   "force_merged": false
-  },
-  {
-   "number": 32484,
-   "title": "Revert \"[Attention][MLA] Make `FLASHINFER_MLA` the default MLA backen\u2026",
-   "url": "https://github.com/vllm-project/vllm/pull/32484",
-   "mergedAt": "2026-01-17T04:42:40Z",
-   "author": "MatthewBonanni",
-   "mergedBy": "LucasWilkinson",
-   "force_merged": false
-  },
-  {
-   "number": 32448,
-   "title": "apply _validate_input to MistralTokenizer token-id chat prompts",
-   "url": "https://github.com/vllm-project/vllm/pull/32448",
-   "mergedAt": "2026-01-17T03:23:46Z",
-   "author": "vanshilshah97",
-   "mergedBy": "DarkLight1337",
-   "force_merged": false
-  },
-  {
-   "number": 32498,
-   "title": "[Docs][Governance] Add @robertshaw2-redhat to lead maintainers group",
-   "url": "https://github.com/vllm-project/vllm/pull/32498",
-   "mergedAt": "2026-01-17T02:35:49Z",
-   "author": "simon-mo",
-   "mergedBy": "simon-mo",
    "force_merged": false
   }
  ]

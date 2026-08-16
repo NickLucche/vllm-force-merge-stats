@@ -1,9 +1,108 @@
 {
- "generated_at": "2026-08-15T07:00:21Z",
+ "generated_at": "2026-08-16T07:01:51Z",
  "repo": "vllm-project/vllm",
  "force_merge_login": "vllm-bot",
- "window_start": "2026-02-14",
+ "window_start": "2026-02-15",
  "records": [
+  {
+   "number": 52401,
+   "title": "[Bugfix] Pick the DeepSeek V4 eager cudagraph region per model runner",
+   "url": "https://github.com/vllm-project/vllm/pull/52401",
+   "mergedAt": "2026-08-16T04:04:09Z",
+   "author": "njhill",
+   "mergedBy": "WoosukKwon",
+   "force_merged": false
+  },
+  {
+   "number": 52419,
+   "title": "[Bugfix][Spec Decode] Keep EAGLE cache registration on the partial-hash-hit path",
+   "url": "https://github.com/vllm-project/vllm/pull/52419",
+   "mergedAt": "2026-08-16T04:03:54Z",
+   "author": "mispa-ms",
+   "mergedBy": "WoosukKwon",
+   "force_merged": false
+  },
+  {
+   "number": 51318,
+   "title": "[Bugfix][DSv4] Revert adaptive C128A metadata packing",
+   "url": "https://github.com/vllm-project/vllm/pull/51318",
+   "mergedAt": "2026-08-16T01:39:24Z",
+   "author": "tobymao",
+   "mergedBy": "ywang96",
+   "force_merged": false
+  },
+  {
+   "number": 49585,
+   "title": "[EC Connector] Added Build Connector Worker Meta for EC Connector",
+   "url": "https://github.com/vllm-project/vllm/pull/49585",
+   "mergedAt": "2026-08-15T22:40:39Z",
+   "author": "omerpaz95",
+   "mergedBy": "ywang96",
+   "force_merged": false
+  },
+  {
+   "number": 49613,
+   "title": "[Bugfix][Sampling] Clear empty side on thinking-budget asymmetric SWAP",
+   "url": "https://github.com/vllm-project/vllm/pull/49613",
+   "mergedAt": "2026-08-15T21:13:03Z",
+   "author": "hsusul",
+   "mergedBy": "njhill",
+   "force_merged": false
+  },
+  {
+   "number": 52445,
+   "title": "[Bugfix][Model] Kimi-K3 MegaMoE: pass situ_beta/situ_linear_beta to fp8_fp4_mega_moe",
+   "url": "https://github.com/vllm-project/vllm/pull/52445",
+   "mergedAt": "2026-08-15T18:59:22Z",
+   "author": "UranusSeven",
+   "mergedBy": "ywang96",
+   "force_merged": false
+  },
+  {
+   "number": 51901,
+   "title": "[CI/Build] Add warning for unsupported global PTX architecture requests in... ",
+   "url": "https://github.com/vllm-project/vllm/pull/51901",
+   "mergedAt": "2026-08-15T14:01:52Z",
+   "author": "shanewidanagama",
+   "mergedBy": "WoosukKwon",
+   "force_merged": false
+  },
+  {
+   "number": 51538,
+   "title": "[Bugfix] Make DSV4 sparse MLA work end-to-end for plain decode, MTP, and DSpark",
+   "url": "https://github.com/vllm-project/vllm/pull/51538",
+   "mergedAt": "2026-08-15T14:01:32Z",
+   "author": "lucifer1004",
+   "mergedBy": "WoosukKwon",
+   "force_merged": false
+  },
+  {
+   "number": 45802,
+   "title": "[Frontend]  Support count_reasoning_tokens in the Streaming Parser Engine",
+   "url": "https://github.com/vllm-project/vllm/pull/45802",
+   "mergedAt": "2026-08-15T13:51:15Z",
+   "author": "chaunceyjiang",
+   "mergedBy": "vllm-bot",
+   "force_merged": true
+  },
+  {
+   "number": 52431,
+   "title": "[Bugfix] Fix modelscope usage",
+   "url": "https://github.com/vllm-project/vllm/pull/52431",
+   "mergedAt": "2026-08-15T09:40:24Z",
+   "author": "DarkLight1337",
+   "mergedBy": "vllm-bot",
+   "force_merged": true
+  },
+  {
+   "number": 52384,
+   "title": "[Rust Frontend][gRPC] Preserve skip_special_tokens decoding option",
+   "url": "https://github.com/vllm-project/vllm/pull/52384",
+   "mergedAt": "2026-08-15T08:54:59Z",
+   "author": "biswapanda",
+   "mergedBy": "njhill",
+   "force_merged": false
+  },
   {
    "number": 49515,
    "title": "[ROCm][CI] Select CPU platform for native no-GPU jobs",
@@ -54687,114 +54786,6 @@
    "author": "WoosukKwon",
    "mergedBy": "WoosukKwon",
    "force_merged": false
-  },
-  {
-   "number": 33997,
-   "title": "[Hybrid] Enable mamba prefix cache \"align\" mode with async scheduling ",
-   "url": "https://github.com/vllm-project/vllm/pull/33997",
-   "mergedAt": "2026-02-14T21:15:56Z",
-   "author": "tdoublep",
-   "mergedBy": "ywang96",
-   "force_merged": false
-  },
-  {
-   "number": 34510,
-   "title": "[Renderer] Move InputPreprocessor into Renderer (1/2)",
-   "url": "https://github.com/vllm-project/vllm/pull/34510",
-   "mergedAt": "2026-02-14T18:14:21Z",
-   "author": "DarkLight1337",
-   "mergedBy": "vllm-bot",
-   "force_merged": true
-  },
-  {
-   "number": 34538,
-   "title": "[ROCm][CI] Guard sparse MLA backend imports for ROCm compatibility in tests",
-   "url": "https://github.com/vllm-project/vllm/pull/34538",
-   "mergedAt": "2026-02-14T15:32:09Z",
-   "author": "AndreasKaratzas",
-   "mergedBy": "vllm-bot",
-   "force_merged": true
-  },
-  {
-   "number": 34554,
-   "title": "[Bugfix] Fix Qwen3.5 config loading",
-   "url": "https://github.com/vllm-project/vllm/pull/34554",
-   "mergedAt": "2026-02-14T11:56:11Z",
-   "author": "ywang96",
-   "mergedBy": "ywang96",
-   "force_merged": false
-  },
-  {
-   "number": 34416,
-   "title": "[Misc] Update tests and examples for Prithvi/Terratorch models",
-   "url": "https://github.com/vllm-project/vllm/pull/34416",
-   "mergedAt": "2026-02-14T07:03:51Z",
-   "author": "christian-pinto",
-   "mergedBy": "vllm-bot",
-   "force_merged": true
-  },
-  {
-   "number": 34398,
-   "title": "[new model] add COLQwen3 code & Inference",
-   "url": "https://github.com/vllm-project/vllm/pull/34398",
-   "mergedAt": "2026-02-14T04:15:20Z",
-   "author": "craftsangjae",
-   "mergedBy": "noooop",
-   "force_merged": false
-  },
-  {
-   "number": 34294,
-   "title": "[CI] Heavy refactoring of Voxtral multimodal audio model tests",
-   "url": "https://github.com/vllm-project/vllm/pull/34294",
-   "mergedAt": "2026-02-14T04:04:29Z",
-   "author": "AndreasKaratzas",
-   "mergedBy": "vllm-bot",
-   "force_merged": true
-  },
-  {
-   "number": 34438,
-   "title": "Add explicit validation error for tool calls.",
-   "url": "https://github.com/vllm-project/vllm/pull/34438",
-   "mergedAt": "2026-02-14T04:04:02Z",
-   "author": "juliendenize",
-   "mergedBy": "vllm-bot",
-   "force_merged": true
-  },
-  {
-   "number": 34527,
-   "title": "fix: use `__annotations__` instead of `get_type_hints()` for dynamic `kwargs` detection",
-   "url": "https://github.com/vllm-project/vllm/pull/34527",
-   "mergedAt": "2026-02-14T04:03:38Z",
-   "author": "perone",
-   "mergedBy": "vllm-bot",
-   "force_merged": true
-  },
-  {
-   "number": 34533,
-   "title": "[bug] Make sure get_modality_with_max_tokens is deterministic",
-   "url": "https://github.com/vllm-project/vllm/pull/34533",
-   "mergedAt": "2026-02-14T04:02:59Z",
-   "author": "842974287",
-   "mergedBy": "vllm-bot",
-   "force_merged": true
-  },
-  {
-   "number": 34535,
-   "title": "[Feature][Perf] Support Selective CPU Weight Offloading",
-   "url": "https://github.com/vllm-project/vllm/pull/34535",
-   "mergedAt": "2026-02-14T04:02:24Z",
-   "author": "wzhao18",
-   "mergedBy": "vllm-bot",
-   "force_merged": true
-  },
-  {
-   "number": 34543,
-   "title": "[Bugfix] Fix ROCm UVA CPU weight offloading broken by #32993",
-   "url": "https://github.com/vllm-project/vllm/pull/34543",
-   "mergedAt": "2026-02-14T04:01:42Z",
-   "author": "AndreasKaratzas",
-   "mergedBy": "vllm-bot",
-   "force_merged": true
   }
  ]
 }

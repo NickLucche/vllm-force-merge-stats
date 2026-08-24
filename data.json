@@ -1,9 +1,189 @@
 {
- "generated_at": "2026-08-23T07:04:05Z",
+ "generated_at": "2026-08-24T07:31:30Z",
  "repo": "vllm-project/vllm",
  "force_merge_login": "vllm-bot",
- "window_start": "2026-02-22",
+ "window_start": "2026-02-23",
  "records": [
+  {
+   "number": 51031,
+   "title": "[Bugfix][Kernel] Handle kernel block sizes in V2 DCP slot mapping",
+   "url": "https://github.com/vllm-project/vllm/pull/51031",
+   "mergedAt": "2026-08-24T07:28:38Z",
+   "author": "NickLucche",
+   "mergedBy": "ywang96",
+   "force_merged": false
+  },
+  {
+   "number": 53000,
+   "title": "Fix MNNVL Lamport mailbox publication and cleanup",
+   "url": "https://github.com/vllm-project/vllm/pull/53000",
+   "mergedAt": "2026-08-24T06:56:54Z",
+   "author": "alexeldeib",
+   "mergedBy": "ywang96",
+   "force_merged": false
+  },
+  {
+   "number": 52951,
+   "title": "[Bugfix] Reuse CUDA streams in packed weight transfer to cap reserved-memory waste",
+   "url": "https://github.com/vllm-project/vllm/pull/52951",
+   "mergedAt": "2026-08-24T06:54:42Z",
+   "author": "qgallouedec",
+   "mergedBy": "ywang96",
+   "force_merged": false
+  },
+  {
+   "number": 53226,
+   "title": "[Xeon][doc]add Xeon recipes into table",
+   "url": "https://github.com/vllm-project/vllm/pull/53226",
+   "mergedAt": "2026-08-24T06:42:29Z",
+   "author": "louie-tsai",
+   "mergedBy": "bigPYJ1151",
+   "force_merged": false
+  },
+  {
+   "number": 53306,
+   "title": "[Model Runner V2] Reserve CUDA graph memory",
+   "url": "https://github.com/vllm-project/vllm/pull/53306",
+   "mergedAt": "2026-08-24T06:11:19Z",
+   "author": "njhill",
+   "mergedBy": "WoosukKwon",
+   "force_merged": false
+  },
+  {
+   "number": 53513,
+   "title": "[Bugfix][LoRA] Add multimodal module mapping for Muse-Glimmer",
+   "url": "https://github.com/vllm-project/vllm/pull/53513",
+   "mergedAt": "2026-08-24T05:51:44Z",
+   "author": "linitra24",
+   "mergedBy": "jeejeelee",
+   "force_merged": false
+  },
+  {
+   "number": 52786,
+   "title": "[LoRA] Add Qwen3-Omni multimodal LoRA support",
+   "url": "https://github.com/vllm-project/vllm/pull/52786",
+   "mergedAt": "2026-08-24T05:25:24Z",
+   "author": "linitra24",
+   "mergedBy": "jeejeelee",
+   "force_merged": false
+  },
+  {
+   "number": 53318,
+   "title": "[Perf] Tune FlashInfer all-reduce selection on SM103",
+   "url": "https://github.com/vllm-project/vllm/pull/53318",
+   "mergedAt": "2026-08-24T05:20:00Z",
+   "author": "GirasoleY",
+   "mergedBy": "zyongye",
+   "force_merged": false
+  },
+  {
+   "number": 52389,
+   "title": "[Bugfix][XPU] Skip oneCCL warm-up all_reduce when world_size == 1",
+   "url": "https://github.com/vllm-project/vllm/pull/52389",
+   "mergedAt": "2026-08-24T04:31:33Z",
+   "author": "studioego",
+   "mergedBy": "jikunshang",
+   "force_merged": false
+  },
+  {
+   "number": 53361,
+   "title": "[LoRA] feat: Support LoRA for DeepSeek V4",
+   "url": "https://github.com/vllm-project/vllm/pull/53361",
+   "mergedAt": "2026-08-24T03:57:58Z",
+   "author": "HollowMan6",
+   "mergedBy": "jeejeelee",
+   "force_merged": false
+  },
+  {
+   "number": 53101,
+   "title": "[Model] Add FP8 quantization support for ModernBERT",
+   "url": "https://github.com/vllm-project/vllm/pull/53101",
+   "mergedAt": "2026-08-24T03:04:20Z",
+   "author": "thunguo",
+   "mergedBy": "noooop",
+   "force_merged": false
+  },
+  {
+   "number": 51896,
+   "title": "Reject oversized media before fully downloading it",
+   "url": "https://github.com/vllm-project/vllm/pull/51896",
+   "mergedAt": "2026-08-24T01:15:10Z",
+   "author": "KernelClint",
+   "mergedBy": "DarkLight1337",
+   "force_merged": false
+  },
+  {
+   "number": 51034,
+   "title": "feat: add SSE keep-alive comments for idle streaming responses",
+   "url": "https://github.com/vllm-project/vllm/pull/51034",
+   "mergedAt": "2026-08-24T01:13:03Z",
+   "author": "fuzzifikation",
+   "mergedBy": "njhill",
+   "force_merged": false
+  },
+  {
+   "number": 53121,
+   "title": "Add MTP support for Nemotron VL models",
+   "url": "https://github.com/vllm-project/vllm/pull/53121",
+   "mergedAt": "2026-08-24T00:59:57Z",
+   "author": "danisereb",
+   "mergedBy": "DarkLight1337",
+   "force_merged": false
+  },
+  {
+   "number": 52467,
+   "title": "[Misc] Use VLLMValidationError in Cohere request validation",
+   "url": "https://github.com/vllm-project/vllm/pull/52467",
+   "mergedAt": "2026-08-24T00:52:27Z",
+   "author": "frank-suwen",
+   "mergedBy": "DarkLight1337",
+   "force_merged": false
+  },
+  {
+   "number": 53460,
+   "title": "[Model] Fix KV cache layout and optimize Dots3 NOTE Omni encoders",
+   "url": "https://github.com/vllm-project/vllm/pull/53460",
+   "mergedAt": "2026-08-23T17:02:35Z",
+   "author": "KurodaKanbei",
+   "mergedBy": "ywang96",
+   "force_merged": false
+  },
+  {
+   "number": 43375,
+   "title": "[RL] P2P RDT weight sync",
+   "url": "https://github.com/vllm-project/vllm/pull/43375",
+   "mergedAt": "2026-08-23T16:42:23Z",
+   "author": "hao-aaron",
+   "mergedBy": "WoosukKwon",
+   "force_merged": false
+  },
+  {
+   "number": 53432,
+   "title": "[Misc] Use VLLMValidationError in offline inference input validation",
+   "url": "https://github.com/vllm-project/vllm/pull/53432",
+   "mergedAt": "2026-08-23T15:43:52Z",
+   "author": "ZHIHANCHEN03",
+   "mergedBy": "vllm-bot",
+   "force_merged": true
+  },
+  {
+   "number": 52209,
+   "title": "Add routed expert loading for gpt-oss",
+   "url": "https://github.com/vllm-project/vllm/pull/52209",
+   "mergedAt": "2026-08-23T09:59:09Z",
+   "author": "wyettzeng",
+   "mergedBy": "Isotr0py",
+   "force_merged": false
+  },
+  {
+   "number": 53358,
+   "title": "[CI/Build] Pin Cython below 3.3 for arm64 tilelang sdist",
+   "url": "https://github.com/vllm-project/vllm/pull/53358",
+   "mergedAt": "2026-08-23T08:09:27Z",
+   "author": "khluu",
+   "mergedBy": "khluu",
+   "force_merged": false
+  },
   {
    "number": 53372,
    "title": "[MM] Simplify prompt updates: replace `PromptSeq` with `list[int]`",
@@ -55910,141 +56090,6 @@
    "mergedAt": "2026-02-23T00:18:05Z",
    "author": "njhill",
    "mergedBy": "WoosukKwon",
-   "force_merged": false
-  },
-  {
-   "number": 34049,
-   "title": "[Spec Decode] Reduce TP communication for speculative decoding draft token generation",
-   "url": "https://github.com/vllm-project/vllm/pull/34049",
-   "mergedAt": "2026-02-22T22:59:16Z",
-   "author": "zixi-qi",
-   "mergedBy": "houseroad",
-   "force_merged": false
-  },
-  {
-   "number": 34478,
-   "title": "[Model] Add NVFP4 quantization support for Step3.5-Flash",
-   "url": "https://github.com/vllm-project/vllm/pull/34478",
-   "mergedAt": "2026-02-22T19:30:46Z",
-   "author": "tacos8me",
-   "mergedBy": "mgoin",
-   "force_merged": false
-  },
-  {
-   "number": 34898,
-   "title": "[Bug] Refactor max_num_batched_tokens to account for drafting",
-   "url": "https://github.com/vllm-project/vllm/pull/34898",
-   "mergedAt": "2026-02-22T16:18:46Z",
-   "author": "benchislett",
-   "mergedBy": "benchislett",
-   "force_merged": false
-  },
-  {
-   "number": 34529,
-   "title": "[Spec Decode] Defer clearing KV connector metadata for EAGLE3 speculative decode + prefill / decode disagg setup",
-   "url": "https://github.com/vllm-project/vllm/pull/34529",
-   "mergedAt": "2026-02-22T16:08:32Z",
-   "author": "zixi-qi",
-   "mergedBy": "houseroad",
-   "force_merged": false
-  },
-  {
-   "number": 35052,
-   "title": "[ROCm][CI] Fix realtime test timeouts caused by aiter JIT compilation delays",
-   "url": "https://github.com/vllm-project/vllm/pull/35052",
-   "mergedAt": "2026-02-22T10:07:18Z",
-   "author": "AndreasKaratzas",
-   "mergedBy": "DarkLight1337",
-   "force_merged": false
-  },
-  {
-   "number": 35050,
-   "title": "[ROCm][CI] Fix flaky embedding chat test by using tolerance-based comparison",
-   "url": "https://github.com/vllm-project/vllm/pull/35050",
-   "mergedAt": "2026-02-22T09:03:44Z",
-   "author": "AndreasKaratzas",
-   "mergedBy": "noooop",
-   "force_merged": false
-  },
-  {
-   "number": 34779,
-   "title": "[Bugfix] Fix Qwen3/Qwen3.5 Reasoning Parser ",
-   "url": "https://github.com/vllm-project/vllm/pull/34779",
-   "mergedAt": "2026-02-22T07:15:35Z",
-   "author": "ywang96",
-   "mergedBy": "ywang96",
-   "force_merged": false
-  },
-  {
-   "number": 35040,
-   "title": "[Model Runner V2] Enable CUDA graph for Eagle3",
-   "url": "https://github.com/vllm-project/vllm/pull/35040",
-   "mergedAt": "2026-02-22T05:42:50Z",
-   "author": "WoosukKwon",
-   "mergedBy": "WoosukKwon",
-   "force_merged": false
-  },
-  {
-   "number": 35030,
-   "title": "Fix apply_top_k_top_p_triton called by non-cuda logits Tensor",
-   "url": "https://github.com/vllm-project/vllm/pull/35030",
-   "mergedAt": "2026-02-22T05:11:54Z",
-   "author": "xli",
-   "mergedBy": "vllm-bot",
-   "force_merged": true
-  },
-  {
-   "number": 35027,
-   "title": "[Benchmark] Use `sns.relplot` for plotting",
-   "url": "https://github.com/vllm-project/vllm/pull/35027",
-   "mergedAt": "2026-02-22T04:26:49Z",
-   "author": "DarkLight1337",
-   "mergedBy": "vllm-bot",
-   "force_merged": true
-  },
-  {
-   "number": 34558,
-   "title": "[New Model] Add ColModernVBERT",
-   "url": "https://github.com/vllm-project/vllm/pull/34558",
-   "mergedAt": "2026-02-22T04:23:42Z",
-   "author": "athrael-soju",
-   "mergedBy": "DarkLight1337",
-   "force_merged": false
-  },
-  {
-   "number": 34961,
-   "title": "[CI] Bump mteb version to `mteb[bm25s]>=2, <3` for pooling model unit tests",
-   "url": "https://github.com/vllm-project/vllm/pull/34961",
-   "mergedAt": "2026-02-22T04:23:25Z",
-   "author": "yewentao256",
-   "mergedBy": "vllm-bot",
-   "force_merged": true
-  },
-  {
-   "number": 35008,
-   "title": "[CI] Stabilizing ROCm amd-ci signal and minor name fix in upstream",
-   "url": "https://github.com/vllm-project/vllm/pull/35008",
-   "mergedAt": "2026-02-22T04:01:11Z",
-   "author": "AndreasKaratzas",
-   "mergedBy": "DarkLight1337",
-   "force_merged": false
-  },
-  {
-   "number": 35036,
-   "title": "[Model Runner V2] Support attention group",
-   "url": "https://github.com/vllm-project/vllm/pull/35036",
-   "mergedAt": "2026-02-22T00:42:53Z",
-   "author": "WoosukKwon",
-   "mergedBy": "WoosukKwon",
-   "force_merged": false
-  },
-  {
-   "number": 34900,
-   "title": "[Model Bash][DSR1] Add selective dynamic shape marking for CustomOp",
-   "url": "https://github.com/vllm-project/vllm/pull/34900",
-   "mergedAt": "2026-02-22T00:28:01Z",
-   "author": "vadiklyutiy",
-   "mergedBy": "ProExpertProg",
    "force_merged": false
   }
  ]

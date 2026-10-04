@@ -1,9 +1,126 @@
 {
- "generated_at": "2026-10-03T11:44:00Z",
+ "generated_at": "2026-10-04T12:26:43Z",
  "repo": "vllm-project/vllm",
  "force_merge_login": "vllm-bot",
- "window_start": "2026-04-04",
+ "window_start": "2026-04-05",
  "records": [
+  {
+   "number": 59932,
+   "title": "[CI] Bump peft to satisfy transformers 5.18 minimum",
+   "url": "https://github.com/vllm-project/vllm/pull/59932",
+   "mergedAt": "2026-10-04T10:53:08Z",
+   "author": "hmellor",
+   "mergedBy": "DarkLight1337",
+   "force_merged": false
+  },
+  {
+   "number": 59159,
+   "title": "[Bugfix][XPU] Make DeepSeek V4 FP8 sparse decode graph-capturable",
+   "url": "https://github.com/vllm-project/vllm/pull/59159",
+   "mergedAt": "2026-10-04T10:31:15Z",
+   "author": "yongqiw-i",
+   "mergedBy": "jikunshang",
+   "force_merged": false
+  },
+  {
+   "number": 56691,
+   "title": "[Bugfix][Multimodal] Normalize single-channel audio to 1D",
+   "url": "https://github.com/vllm-project/vllm/pull/56691",
+   "mergedAt": "2026-10-04T06:11:42Z",
+   "author": "Woolgathererer",
+   "mergedBy": "DarkLight1337",
+   "force_merged": false
+  },
+  {
+   "number": 59862,
+   "title": "[Bugfix][KV Offload] Release pending CPU lookup pins on cache reset",
+   "url": "https://github.com/vllm-project/vllm/pull/59862",
+   "mergedAt": "2026-10-04T04:30:18Z",
+   "author": "zupengwang",
+   "mergedBy": "ivanium",
+   "force_merged": false
+  },
+  {
+   "number": 59859,
+   "title": "[Bugfix][Responses API] Reuse streamed item ids in final harmony response",
+   "url": "https://github.com/vllm-project/vllm/pull/59859",
+   "mergedAt": "2026-10-04T03:01:05Z",
+   "author": "he-yufeng",
+   "mergedBy": "sfeng33",
+   "force_merged": false
+  },
+  {
+   "number": 47933,
+   "title": "[Bugfix][Frontend] Preserve abort finish_reason for scale-out token streams",
+   "url": "https://github.com/vllm-project/vllm/pull/47933",
+   "mergedAt": "2026-10-04T02:57:27Z",
+   "author": "Sunt-ing",
+   "mergedBy": "sfeng33",
+   "force_merged": false
+  },
+  {
+   "number": 56891,
+   "title": "[Bugfix] Fix FlashInfer all_reduce backend selection",
+   "url": "https://github.com/vllm-project/vllm/pull/56891",
+   "mergedAt": "2026-10-04T02:18:59Z",
+   "author": "elvircrn",
+   "mergedBy": "tlrmchlsmth",
+   "force_merged": false
+  },
+  {
+   "number": 59160,
+   "title": "[Feature] Release the CUDA graph pool on sleep",
+   "url": "https://github.com/vllm-project/vllm/pull/59160",
+   "mergedAt": "2026-10-04T01:13:11Z",
+   "author": "aoshen02",
+   "mergedBy": "aoshen02",
+   "force_merged": false
+  },
+  {
+   "number": 59621,
+   "title": "[CI] Bump Transformers version to 5.18.0",
+   "url": "https://github.com/vllm-project/vllm/pull/59621",
+   "mergedAt": "2026-10-04T00:42:36Z",
+   "author": "hmellor",
+   "mergedBy": "hmellor",
+   "force_merged": false
+  },
+  {
+   "number": 59462,
+   "title": "[DCP] Enable TokenSpeed MLA with block-interleaved DCP",
+   "url": "https://github.com/vllm-project/vllm/pull/59462",
+   "mergedAt": "2026-10-03T17:26:08Z",
+   "author": "wzhao18",
+   "mergedBy": "wzhao18",
+   "force_merged": false
+  },
+  {
+   "number": 54706,
+   "title": "[ROCm][RDNA3] Fix W4A16 split-K accuracy and determinism",
+   "url": "https://github.com/vllm-project/vllm/pull/54706",
+   "mergedAt": "2026-10-03T15:44:18Z",
+   "author": "AIwork4me",
+   "mergedBy": "tjtanaa",
+   "force_merged": false
+  },
+  {
+   "number": 59441,
+   "title": "[Bugfix][MoRIIO] Keep discovery heartbeats running while workers hold the GIL",
+   "url": "https://github.com/vllm-project/vllm/pull/59441",
+   "mergedAt": "2026-10-03T14:55:18Z",
+   "author": "whx-sjtu",
+   "mergedBy": "tjtanaa",
+   "force_merged": false
+  },
+  {
+   "number": 56984,
+   "title": "[Feature] Per-row candidate IDs for prefill token scoring (M2 of #56860)",
+   "url": "https://github.com/vllm-project/vllm/pull/56984",
+   "mergedAt": "2026-10-03T14:17:10Z",
+   "author": "aoshen02",
+   "mergedBy": "aoshen02",
+   "force_merged": false
+  },
   {
    "number": 58588,
    "title": "[Frontend] Add output_mode to /inference/v1/generate (RFC #56851 Phase 1)",
@@ -62318,87 +62435,6 @@
    "mergedAt": "2026-04-05T00:07:46Z",
    "author": "robertgshaw2-redhat",
    "mergedBy": "robertgshaw2-redhat",
-   "force_merged": false
-  },
-  {
-   "number": 38998,
-   "title": "Revert \"[vLLM IR] gemma_rms_norm\"",
-   "url": "https://github.com/vllm-project/vllm/pull/38998",
-   "mergedAt": "2026-04-04T21:48:08Z",
-   "author": "robertgshaw2-redhat",
-   "mergedBy": "robertgshaw2-redhat",
-   "force_merged": false
-  },
-  {
-   "number": 38780,
-   "title": "[vLLM IR][RMSNorm] Port GemmaRMSNorm to vLLM IR Ops",
-   "url": "https://github.com/vllm-project/vllm/pull/38780",
-   "mergedAt": "2026-04-04T17:55:52Z",
-   "author": "wxsIcey",
-   "mergedBy": "ProExpertProg",
-   "force_merged": false
-  },
-  {
-   "number": 38981,
-   "title": "[Perf][GDN] Align TMA usage with upstream FLA",
-   "url": "https://github.com/vllm-project/vllm/pull/38981",
-   "mergedAt": "2026-04-04T16:38:02Z",
-   "author": "arpera",
-   "mergedBy": "ZJY0516",
-   "force_merged": false
-  },
-  {
-   "number": 38961,
-   "title": "[IR][RmsNorm] pass None if not has_weight",
-   "url": "https://github.com/vllm-project/vllm/pull/38961",
-   "mergedAt": "2026-04-04T15:02:31Z",
-   "author": "lk-chen",
-   "mergedBy": "ProExpertProg",
-   "force_merged": false
-  },
-  {
-   "number": 38970,
-   "title": "[Bugfix][CPU] Fix macOS compatibility broken by #36487",
-   "url": "https://github.com/vllm-project/vllm/pull/38970",
-   "mergedAt": "2026-04-04T14:05:58Z",
-   "author": "2imi9",
-   "mergedBy": "bigPYJ1151",
-   "force_merged": false
-  },
-  {
-   "number": 38955,
-   "title": "Refactor Arctic loading to use AutoWeightsLoader",
-   "url": "https://github.com/vllm-project/vllm/pull/38955",
-   "mergedAt": "2026-04-04T05:01:10Z",
-   "author": "lalit10",
-   "mergedBy": "DarkLight1337",
-   "force_merged": false
-  },
-  {
-   "number": 38870,
-   "title": "[Bugfix] Fix DSV32 weight loading",
-   "url": "https://github.com/vllm-project/vllm/pull/38870",
-   "mergedAt": "2026-04-04T02:57:52Z",
-   "author": "zyongye",
-   "mergedBy": "njhill",
-   "force_merged": false
-  },
-  {
-   "number": 38959,
-   "title": "[ROCm][CI] Fix ROCm Dockerfile conftest generation for older Docker parsers",
-   "url": "https://github.com/vllm-project/vllm/pull/38959",
-   "mergedAt": "2026-04-04T02:41:41Z",
-   "author": "AndreasKaratzas",
-   "mergedBy": "tjtanaa",
-   "force_merged": false
-  },
-  {
-   "number": 38853,
-   "title": "[Bug] Fix workspace manager `_current_workspaces` size",
-   "url": "https://github.com/vllm-project/vllm/pull/38853",
-   "mergedAt": "2026-04-04T01:29:45Z",
-   "author": "yewentao256",
-   "mergedBy": "yewentao256",
    "force_merged": false
   }
  ]

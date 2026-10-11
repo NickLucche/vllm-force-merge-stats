@@ -1,9 +1,180 @@
 {
- "generated_at": "2026-10-10T12:37:01Z",
+ "generated_at": "2026-10-11T12:55:36Z",
  "repo": "vllm-project/vllm",
  "force_merge_login": "vllm-bot",
- "window_start": "2026-04-11",
+ "window_start": "2026-04-12",
  "records": [
+  {
+   "number": 58674,
+   "title": "[Model] Support MiniCPM-V 4.7",
+   "url": "https://github.com/vllm-project/vllm/pull/58674",
+   "mergedAt": "2026-10-11T10:21:11Z",
+   "author": "tc-mb",
+   "mergedBy": "DarkLight1337",
+   "force_merged": false
+  },
+  {
+   "number": 57243,
+   "title": "[Bugfix][Frontend] Support scalar priority and wire priority into LLM.chat()",
+   "url": "https://github.com/vllm-project/vllm/pull/57243",
+   "mergedAt": "2026-10-11T10:03:34Z",
+   "author": "subhashpolisetti",
+   "mergedBy": "DarkLight1337",
+   "force_merged": false
+  },
+  {
+   "number": 61012,
+   "title": "[Bugfix][Mooncake] Use the EAGLE replay boundary when retaining sliding-window tails",
+   "url": "https://github.com/vllm-project/vllm/pull/61012",
+   "mergedAt": "2026-10-11T09:15:19Z",
+   "author": "stu-cao",
+   "mergedBy": "ivanium",
+   "force_merged": false
+  },
+  {
+   "number": 61042,
+   "title": "[Frontend] Explain disabled scale-out endpoints with opt-in hints",
+   "url": "https://github.com/vllm-project/vllm/pull/61042",
+   "mergedAt": "2026-10-11T08:58:08Z",
+   "author": "aoshen02",
+   "mergedBy": "aoshen02",
+   "force_merged": false
+  },
+  {
+   "number": 61009,
+   "title": "[Security] Restrict default CORS origins",
+   "url": "https://github.com/vllm-project/vllm/pull/61009",
+   "mergedAt": "2026-10-11T08:26:02Z",
+   "author": "jperezdealgaba",
+   "mergedBy": "DarkLight1337",
+   "force_merged": false
+  },
+  {
+   "number": 60966,
+   "title": "[Fast Start][Bugfix] Snapshot GPU memory after external weights are ready",
+   "url": "https://github.com/vllm-project/vllm/pull/60966",
+   "mergedAt": "2026-10-11T07:10:05Z",
+   "author": "UNIDY2002",
+   "mergedBy": "Isotr0py",
+   "force_merged": false
+  },
+  {
+   "number": 57516,
+   "title": "[Bugfix] Reclaim cached GPU memory during weight loading",
+   "url": "https://github.com/vllm-project/vllm/pull/57516",
+   "mergedAt": "2026-10-11T07:03:07Z",
+   "author": "debanshd",
+   "mergedBy": "Isotr0py",
+   "force_merged": false
+  },
+  {
+   "number": 55203,
+   "title": "[Bugfix][Multimodal] Fix per-video cache option reuse",
+   "url": "https://github.com/vllm-project/vllm/pull/55203",
+   "mergedAt": "2026-10-11T06:21:56Z",
+   "author": "bvolpato",
+   "mergedBy": "DarkLight1337",
+   "force_merged": false
+  },
+  {
+   "number": 60684,
+   "title": "[Perf][MiniMax-M3] MSA prefill attends with the E4M3 query; bump fmha_sm100 to 968061a",
+   "url": "https://github.com/vllm-project/vllm/pull/60684",
+   "mergedAt": "2026-10-11T05:40:46Z",
+   "author": "zyongye",
+   "mergedBy": "zyongye",
+   "force_merged": false
+  },
+  {
+   "number": 60937,
+   "title": "[MRV2] Detatch weight-reload logic from MRV1",
+   "url": "https://github.com/vllm-project/vllm/pull/60937",
+   "mergedAt": "2026-10-11T04:15:07Z",
+   "author": "njhill",
+   "mergedBy": "WoosukKwon",
+   "force_merged": false
+  },
+  {
+   "number": 59880,
+   "title": "[Bugfix][KV Connector] Fix speculative block reservations across KV cache groups",
+   "url": "https://github.com/vllm-project/vllm/pull/59880",
+   "mergedAt": "2026-10-11T03:55:41Z",
+   "author": "bzsuni",
+   "mergedBy": "njhill",
+   "force_merged": false
+  },
+  {
+   "number": 59582,
+   "title": "[RL][Frontend] Return token-level weight-version spans on final outputs",
+   "url": "https://github.com/vllm-project/vllm/pull/59582",
+   "mergedAt": "2026-10-11T03:33:30Z",
+   "author": "ShuoleiWang",
+   "mergedBy": "aoshen02",
+   "force_merged": false
+  },
+  {
+   "number": 52235,
+   "title": "[Bugfix] Support 0-dim tensors in packed weight transfer",
+   "url": "https://github.com/vllm-project/vllm/pull/52235",
+   "mergedAt": "2026-10-11T01:41:07Z",
+   "author": "subhashpolisetti",
+   "mergedBy": "aoshen02",
+   "force_merged": false
+  },
+  {
+   "number": 60923,
+   "title": "[Deprecation] Remove scheduled deprecated items",
+   "url": "https://github.com/vllm-project/vllm/pull/60923",
+   "mergedAt": "2026-10-10T19:45:33Z",
+   "author": "yewentao256",
+   "mergedBy": "yewentao256",
+   "force_merged": false
+  },
+  {
+   "number": 60982,
+   "title": "[Bugfix][Frontend] Forward --enable-log-outputs to the Anthropic handler",
+   "url": "https://github.com/vllm-project/vllm/pull/60982",
+   "mergedAt": "2026-10-10T16:36:03Z",
+   "author": "he-yufeng",
+   "mergedBy": "DarkLight1337",
+   "force_merged": false
+  },
+  {
+   "number": 60085,
+   "title": "[Fast Start] Preload the FlashInfer autotune table on the weight cache daemon",
+   "url": "https://github.com/vllm-project/vllm/pull/60085",
+   "mergedAt": "2026-10-10T15:48:07Z",
+   "author": "liusy58",
+   "mergedBy": "Isotr0py",
+   "force_merged": false
+  },
+  {
+   "number": 60120,
+   "title": "[Refactor] Remove dead code multiple places",
+   "url": "https://github.com/vllm-project/vllm/pull/60120",
+   "mergedAt": "2026-10-10T15:41:11Z",
+   "author": "yewentao256",
+   "mergedBy": "yewentao256",
+   "force_merged": false
+  },
+  {
+   "number": 60680,
+   "title": "[Compile] Fix sampler compile warning",
+   "url": "https://github.com/vllm-project/vllm/pull/60680",
+   "mergedAt": "2026-10-10T15:09:46Z",
+   "author": "yewentao256",
+   "mergedBy": "vllm-bot",
+   "force_merged": true
+  },
+  {
+   "number": 60187,
+   "title": "[Bugfix][Model] K-EXAONE: restore loading of pre-2.0 configs and apply RoPE to the MTP layer",
+   "url": "https://github.com/vllm-project/vllm/pull/60187",
+   "mergedAt": "2026-10-10T15:05:56Z",
+   "author": "Godmook",
+   "mergedBy": "DarkLight1337",
+   "force_merged": false
+  },
   {
    "number": 58497,
    "title": "[BUG] Fix KV offload shared-memory slot selection using worker rank",
@@ -64262,105 +64433,6 @@
    "mergedAt": "2026-04-12T02:46:29Z",
    "author": "yma11",
    "mergedBy": "jikunshang",
-   "force_merged": false
-  },
-  {
-   "number": 38815,
-   "title": "[Quant] add CompressedTensorsW8A8Mxfp8 for linear and MoE layers",
-   "url": "https://github.com/vllm-project/vllm/pull/38815",
-   "mergedAt": "2026-04-11T23:21:36Z",
-   "author": "EdalatiAli",
-   "mergedBy": "mgoin",
-   "force_merged": false
-  },
-  {
-   "number": 38919,
-   "title": "[Bugfix] Runtime driver check for cuMemcpyBatchAsync in swap_blocks_batch",
-   "url": "https://github.com/vllm-project/vllm/pull/38919",
-   "mergedAt": "2026-04-11T17:02:34Z",
-   "author": "Etelis",
-   "mergedBy": "mgoin",
-   "force_merged": false
-  },
-  {
-   "number": 39547,
-   "title": "[Perf] Fuse Zero Initializer for FP8 DeepGemm Block Quant Kernel",
-   "url": "https://github.com/vllm-project/vllm/pull/39547",
-   "mergedAt": "2026-04-11T14:16:52Z",
-   "author": "wzhao18",
-   "mergedBy": "vllm-bot",
-   "force_merged": true
-  },
-  {
-   "number": 38844,
-   "title": "[Gemma4][Bugfix]: Enable Gemma4ForCasualLM to load lora adapters correctly",
-   "url": "https://github.com/vllm-project/vllm/pull/38844",
-   "mergedAt": "2026-04-11T09:06:49Z",
-   "author": "ShubyM",
-   "mergedBy": "jeejeelee",
-   "force_merged": false
-  },
-  {
-   "number": 39064,
-   "title": "[Bugfix] Fix GDN FLA kernel crashes with NULL_BLOCK_ID=0 CUDA graph padding",
-   "url": "https://github.com/vllm-project/vllm/pull/39064",
-   "mergedAt": "2026-04-11T08:35:19Z",
-   "author": "vibhavagarwal5",
-   "mergedBy": "vadiklyutiy",
-   "force_merged": false
-  },
-  {
-   "number": 39557,
-   "title": "[CI/Build] Fix sentence-transformers version in CPU test",
-   "url": "https://github.com/vllm-project/vllm/pull/39557",
-   "mergedAt": "2026-04-11T07:04:26Z",
-   "author": "bigPYJ1151",
-   "mergedBy": "noooop",
-   "force_merged": false
-  },
-  {
-   "number": 39518,
-   "title": "[Misc] Update deprecation warning for --model flag",
-   "url": "https://github.com/vllm-project/vllm/pull/39518",
-   "mergedAt": "2026-04-11T06:25:20Z",
-   "author": "z1ying",
-   "mergedBy": "vllm-bot",
-   "force_merged": true
-  },
-  {
-   "number": 39526,
-   "title": "[Bugfix] add SupportsMultiModal to Exaone4_5_MTP",
-   "url": "https://github.com/vllm-project/vllm/pull/39526",
-   "mergedAt": "2026-04-11T05:57:26Z",
-   "author": "elwhyjay",
-   "mergedBy": "vllm-bot",
-   "force_merged": true
-  },
-  {
-   "number": 38907,
-   "title": "Fix the order of _free_encoder_inputs",
-   "url": "https://github.com/vllm-project/vllm/pull/38907",
-   "mergedAt": "2026-04-11T05:47:49Z",
-   "author": "gty111",
-   "mergedBy": "ywang96",
-   "force_merged": false
-  },
-  {
-   "number": 38491,
-   "title": "[XPU] Fix spec-decode UTs under tests/v1/spec_decode",
-   "url": "https://github.com/vllm-project/vllm/pull/38491",
-   "mergedAt": "2026-04-11T01:31:01Z",
-   "author": "yma11",
-   "mergedBy": "jikunshang",
-   "force_merged": false
-  },
-  {
-   "number": 39512,
-   "title": "Revert \"Add nightly b200 test for spec decode eagle correctness (#38577)\"",
-   "url": "https://github.com/vllm-project/vllm/pull/39512",
-   "mergedAt": "2026-04-11T00:07:32Z",
-   "author": "benchislett",
-   "mergedBy": "benchislett",
    "force_merged": false
   }
  ]

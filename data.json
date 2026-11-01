@@ -1,9 +1,207 @@
 {
- "generated_at": "2026-10-31T12:37:10Z",
+ "generated_at": "2026-11-01T13:30:19Z",
  "repo": "vllm-project/vllm",
  "force_merge_login": "vllm-bot",
- "window_start": "2026-05-02",
+ "window_start": "2026-05-03",
  "records": [
+  {
+   "number": 63900,
+   "title": "[KV Offload] Remove unused touch from CachePolicy and OffloadingManager",
+   "url": "https://github.com/vllm-project/vllm/pull/63900",
+   "mergedAt": "2026-11-01T09:02:50Z",
+   "author": "mindungil",
+   "mergedBy": "orozery",
+   "force_merged": false
+  },
+  {
+   "number": 63695,
+   "title": "[KV Offload] Carry request context on raw stored events",
+   "url": "https://github.com/vllm-project/vllm/pull/63695",
+   "mergedAt": "2026-11-01T07:34:53Z",
+   "author": "Change72",
+   "mergedBy": "orozery",
+   "force_merged": false
+  },
+  {
+   "number": 64955,
+   "title": "[Perf][MoE] Fuse padding skipping in grouped and Muse prepared routing",
+   "url": "https://github.com/vllm-project/vllm/pull/64955",
+   "mergedAt": "2026-11-01T07:06:26Z",
+   "author": "WoosukKwon",
+   "mergedBy": "WoosukKwon",
+   "force_merged": false
+  },
+  {
+   "number": 59961,
+   "title": "[Bugfix][DSv3.2] Carry the shared indexer top-k across pipeline stages",
+   "url": "https://github.com/vllm-project/vllm/pull/59961",
+   "mergedAt": "2026-11-01T06:47:36Z",
+   "author": "LucasWilkinson",
+   "mergedBy": "aoshen02",
+   "force_merged": false
+  },
+  {
+   "number": 64607,
+   "title": "[Recipe] Qwen3.5-397B-A17B: add the B200 NVFP4 TP2 agentic preset",
+   "url": "https://github.com/vllm-project/vllm/pull/64607",
+   "mergedAt": "2026-11-01T03:04:42Z",
+   "author": "aniskumar-nv",
+   "mergedBy": "esmeetu",
+   "force_merged": false
+  },
+  {
+   "number": 64910,
+   "title": "[Doc] MiniMax-M3.1-Flash: update the GB300 AgentX presets",
+   "url": "https://github.com/vllm-project/vllm/pull/64910",
+   "mergedAt": "2026-11-01T00:33:38Z",
+   "author": "xinli-sw",
+   "mergedBy": "esmeetu",
+   "force_merged": false
+  },
+  {
+   "number": 64909,
+   "title": "[Doc] MiniMax-M3.1-Flash: update the GB200 AgentX presets",
+   "url": "https://github.com/vllm-project/vllm/pull/64909",
+   "mergedAt": "2026-11-01T00:33:22Z",
+   "author": "xinli-sw",
+   "mergedBy": "esmeetu",
+   "force_merged": false
+  },
+  {
+   "number": 64792,
+   "title": "[Docs][ROCm] Mistral Large 4 recipe: adds TP4 and lowest-latency presets ",
+   "url": "https://github.com/vllm-project/vllm/pull/64792",
+   "mergedAt": "2026-10-31T21:23:05Z",
+   "author": "indivats",
+   "mergedBy": "hongxiayang",
+   "force_merged": false
+  },
+  {
+   "number": 64805,
+   "title": "[Docs][ROCm] Add MiniMax-M3.1-Flash MI355X TP4 AgentX preset",
+   "url": "https://github.com/vllm-project/vllm/pull/64805",
+   "mergedAt": "2026-10-31T21:22:58Z",
+   "author": "Fangzhou-Ai",
+   "mergedBy": "hongxiayang",
+   "force_merged": false
+  },
+  {
+   "number": 64804,
+   "title": "[Docs][ROCm] Add DeepSeek-V4.1-Flash MI355X TP8 concurrency-1 AgentX preset",
+   "url": "https://github.com/vllm-project/vllm/pull/64804",
+   "mergedAt": "2026-10-31T21:18:42Z",
+   "author": "Fangzhou-Ai",
+   "mergedBy": "hongxiayang",
+   "force_merged": false
+  },
+  {
+   "number": 61542,
+   "title": "[Bugfix][Tool Parser] Preserve whitespace in HYV4 argument names",
+   "url": "https://github.com/vllm-project/vllm/pull/61542",
+   "mergedAt": "2026-10-31T20:28:35Z",
+   "author": "Vegetog",
+   "mergedBy": "sfeng33",
+   "force_merged": false
+  },
+  {
+   "number": 64751,
+   "title": "[Bugfix][Spec Decode] Honor draft moe/attention backend overrides for MRV2 standalone draft model",
+   "url": "https://github.com/vllm-project/vllm/pull/64751",
+   "mergedAt": "2026-10-31T20:21:57Z",
+   "author": "aoshen02",
+   "mergedBy": "TheEpicDolphin",
+   "force_merged": false
+  },
+  {
+   "number": 63842,
+   "title": "[Perf][Frontend] Compute prompt block hashes in the Rust frontend",
+   "url": "https://github.com/vllm-project/vllm/pull/63842",
+   "mergedAt": "2026-10-31T19:38:39Z",
+   "author": "njhill",
+   "mergedBy": "njhill",
+   "force_merged": false
+  },
+  {
+   "number": 60618,
+   "title": "[Perf][Kernel] Single-launch fused scoring+top-k kernel for sparse-indexer prefill, without materializing logits",
+   "url": "https://github.com/vllm-project/vllm/pull/60618",
+   "mergedAt": "2026-10-31T19:01:19Z",
+   "author": "LopezCastroRoberto",
+   "mergedBy": "LucasWilkinson",
+   "force_merged": false
+  },
+  {
+   "number": 64841,
+   "title": "[ModelRunner V2] Reduce peak memory of chunked prompt logprobs",
+   "url": "https://github.com/vllm-project/vllm/pull/64841",
+   "mergedAt": "2026-10-31T18:48:17Z",
+   "author": "njhill",
+   "mergedBy": "WoosukKwon",
+   "force_merged": false
+  },
+  {
+   "number": 64757,
+   "title": "[Bugfix][Frontend] Report prompt_tokens_details in batched chat completions",
+   "url": "https://github.com/vllm-project/vllm/pull/64757",
+   "mergedAt": "2026-10-31T16:03:43Z",
+   "author": "Jackmeson1",
+   "mergedBy": "DarkLight1337",
+   "force_merged": false
+  },
+  {
+   "number": 63174,
+   "title": "[Bugfix] Skip redundant weight tensor clones for loaders that yield owned tensors",
+   "url": "https://github.com/vllm-project/vllm/pull/63174",
+   "mergedAt": "2026-10-31T16:02:24Z",
+   "author": "noa-neria",
+   "mergedBy": "DarkLight1337",
+   "force_merged": false
+  },
+  {
+   "number": 54399,
+   "title": "[Bugfix][Model] Fix CohereASR FP16 attention bias dtype",
+   "url": "https://github.com/vllm-project/vllm/pull/54399",
+   "mergedAt": "2026-10-31T15:42:58Z",
+   "author": "ActiveSky",
+   "mergedBy": "DarkLight1337",
+   "force_merged": false
+  },
+  {
+   "number": 62192,
+   "title": "[Kernel] Batch invariance: pin FlashInfer FP8 bmm and W4A16 NVFP4 kernels",
+   "url": "https://github.com/vllm-project/vllm/pull/62192",
+   "mergedAt": "2026-10-31T15:25:10Z",
+   "author": "0z5a",
+   "mergedBy": "aoshen02",
+   "force_merged": false
+  },
+  {
+   "number": 64338,
+   "title": "[Bugfix] Flashinfer attention warmup deadlock under PP>1",
+   "url": "https://github.com/vllm-project/vllm/pull/64338",
+   "mergedAt": "2026-10-31T15:24:05Z",
+   "author": "yzong-rh",
+   "mergedBy": "LucasWilkinson",
+   "force_merged": false
+  },
+  {
+   "number": 62956,
+   "title": "[Perf][glm5next] Add SM121 TP=2 skinny-GEMM plans for GLM-5.3-Flash",
+   "url": "https://github.com/vllm-project/vllm/pull/62956",
+   "mergedAt": "2026-10-31T13:55:24Z",
+   "author": "TimRen01",
+   "mergedBy": "LucasWilkinson",
+   "force_merged": false
+  },
+  {
+   "number": 64733,
+   "title": "[MiniMax-M3.1][PP] m31-pp-opt: NIXL pull from PP prefill stages and the Q8KV4 prefill workspace on SM10x",
+   "url": "https://github.com/vllm-project/vllm/pull/64733",
+   "mergedAt": "2026-10-31T12:40:09Z",
+   "author": "liusy58",
+   "mergedBy": "gau-nernst",
+   "force_merged": false
+  },
   {
    "number": 64368,
    "title": "[Spec Decode][ROCm] draft_lm_head_quantization for DSpark drafters",
@@ -72290,114 +72488,6 @@
    "mergedAt": "2026-05-03T01:32:09Z",
    "author": "ywang96",
    "mergedBy": "ywang96",
-   "force_merged": false
-  },
-  {
-   "number": 41522,
-   "title": "[DSV4] Guard megamoe flag with Pure TP",
-   "url": "https://github.com/vllm-project/vllm/pull/41522",
-   "mergedAt": "2026-05-02T23:41:40Z",
-   "author": "zyongye",
-   "mergedBy": "ywang96",
-   "force_merged": false
-  },
-  {
-   "number": 41517,
-   "title": "[CI] Add ci-fetch-log.sh helper for Buildkite job logs",
-   "url": "https://github.com/vllm-project/vllm/pull/41517",
-   "mergedAt": "2026-05-02T22:24:00Z",
-   "author": "mgoin",
-   "mergedBy": "vllm-bot",
-   "force_merged": true
-  },
-  {
-   "number": 41512,
-   "title": "Revert \"[Build] Make bundled DeepGEMM wheel portable across Python versions\"",
-   "url": "https://github.com/vllm-project/vllm/pull/41512",
-   "mergedAt": "2026-05-02T16:42:42Z",
-   "author": "mgoin",
-   "mergedBy": "vllm-bot",
-   "force_merged": true
-  },
-  {
-   "number": 41416,
-   "title": "[Build] Switch CUDA 13.0 wheel builds to PyTorch manylinux_2_28 base",
-   "url": "https://github.com/vllm-project/vllm/pull/41416",
-   "mergedAt": "2026-05-02T12:51:29Z",
-   "author": "mgoin",
-   "mergedBy": "vllm-bot",
-   "force_merged": true
-  },
-  {
-   "number": 40796,
-   "title": "[Bugfix][Gemma 4] Clamp soft-token estimate to max_soft_tokens",
-   "url": "https://github.com/vllm-project/vllm/pull/40796",
-   "mergedAt": "2026-05-02T06:34:59Z",
-   "author": "hnt2601",
-   "mergedBy": "Isotr0py",
-   "force_merged": false
-  },
-  {
-   "number": 41492,
-   "title": "Refactor Step3Text loading to use AutoWeightsLoader",
-   "url": "https://github.com/vllm-project/vllm/pull/41492",
-   "mergedAt": "2026-05-02T06:22:15Z",
-   "author": "mcsantiago",
-   "mergedBy": "DarkLight1337",
-   "force_merged": false
-  },
-  {
-   "number": 41358,
-   "title": "[Doc] Add Codex usage example",
-   "url": "https://github.com/vllm-project/vllm/pull/41358",
-   "mergedAt": "2026-05-02T05:27:43Z",
-   "author": "chaunceyjiang",
-   "mergedBy": "Isotr0py",
-   "force_merged": false
-  },
-  {
-   "number": 41405,
-   "title": "[ROCm][Bugfix] Fix init-time bias dtype cast when gate.out_dtype is None",
-   "url": "https://github.com/vllm-project/vllm/pull/41405",
-   "mergedAt": "2026-05-02T04:13:16Z",
-   "author": "rbrugaro-amd",
-   "mergedBy": "ProExpertProg",
-   "force_merged": false
-  },
-  {
-   "number": 36823,
-   "title": "[vLLM IR] 2/N fused_add_rms_norm and maybe_inplace overload",
-   "url": "https://github.com/vllm-project/vllm/pull/36823",
-   "mergedAt": "2026-05-02T03:41:16Z",
-   "author": "ProExpertProg",
-   "mergedBy": "ProExpertProg",
-   "force_merged": false
-  },
-  {
-   "number": 41478,
-   "title": "Limit concurrency on `test_transcription_api_correctness.py`",
-   "url": "https://github.com/vllm-project/vllm/pull/41478",
-   "mergedAt": "2026-05-02T03:19:07Z",
-   "author": "ekagra-ranjan",
-   "mergedBy": "DarkLight1337",
-   "force_merged": false
-  },
-  {
-   "number": 40830,
-   "title": "[MM][CG] Support ViT CG for Qwen2.5-VL",
-   "url": "https://github.com/vllm-project/vllm/pull/40830",
-   "mergedAt": "2026-05-02T03:10:15Z",
-   "author": "johncalesp",
-   "mergedBy": "DarkLight1337",
-   "force_merged": false
-  },
-  {
-   "number": 39570,
-   "title": "[Fix] Sync gemma4 chat template from hf",
-   "url": "https://github.com/vllm-project/vllm/pull/39570",
-   "mergedAt": "2026-05-02T03:06:54Z",
-   "author": "FredericOdermatt",
-   "mergedBy": "bbrowning",
    "force_merged": false
   }
  ]

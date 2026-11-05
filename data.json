@@ -1,9 +1,1053 @@
 {
- "generated_at": "2026-11-04T14:38:30Z",
+ "generated_at": "2026-11-05T14:44:34Z",
  "repo": "vllm-project/vllm",
  "force_merge_login": "vllm-bot",
- "window_start": "2026-05-06",
+ "window_start": "2026-05-07",
  "records": [
+  {
+   "number": 64689,
+   "title": "[Feature][MoE] Allow a shared routed-expert row restorer",
+   "url": "https://github.com/vllm-project/vllm/pull/64689",
+   "mergedAt": "2026-11-05T14:33:53Z",
+   "author": "Liamup777",
+   "mergedBy": "aoshen02",
+   "force_merged": false
+  },
+  {
+   "number": 65636,
+   "title": "[Rust Frontend] Report system_fingerprint from the engine's config hash",
+   "url": "https://github.com/vllm-project/vllm/pull/65636",
+   "mergedAt": "2026-11-05T14:20:48Z",
+   "author": "BugenZhao",
+   "mergedBy": "BugenZhao",
+   "force_merged": false
+  },
+  {
+   "number": 65622,
+   "title": "[Rust Frontend] Count vllm:watermark_requests from the engine-reported flag",
+   "url": "https://github.com/vllm-project/vllm/pull/65622",
+   "mergedAt": "2026-11-05T14:06:32Z",
+   "author": "BugenZhao",
+   "mergedBy": "BugenZhao",
+   "force_merged": false
+  },
+  {
+   "number": 65867,
+   "title": "[Perf][Frontend] Write run-batch JSON responses without parsing them back",
+   "url": "https://github.com/vllm-project/vllm/pull/65867",
+   "mergedAt": "2026-11-05T13:05:31Z",
+   "author": "inc-jeong",
+   "mergedBy": "DarkLight1337",
+   "force_merged": false
+  },
+  {
+   "number": 65850,
+   "title": "[Rust Frontend] Add the max_lora label to vllm:lora_requests_info",
+   "url": "https://github.com/vllm-project/vllm/pull/65850",
+   "mergedAt": "2026-11-05T12:56:44Z",
+   "author": "BugenZhao",
+   "mergedBy": "BugenZhao",
+   "force_merged": false
+  },
+  {
+   "number": 65635,
+   "title": "[Rust Frontend] Export vllm:cache_config_info like Python",
+   "url": "https://github.com/vllm-project/vllm/pull/65635",
+   "mergedAt": "2026-11-05T12:54:27Z",
+   "author": "BugenZhao",
+   "mergedBy": "BugenZhao",
+   "force_merged": false
+  },
+  {
+   "number": 65895,
+   "title": "[CI] Use a repository-scoped Docker Hub secret for release publishing",
+   "url": "https://github.com/vllm-project/vllm/pull/65895",
+   "mergedAt": "2026-11-05T11:22:07Z",
+   "author": "khluu",
+   "mergedBy": "khluu",
+   "force_merged": false
+  },
+  {
+   "number": 65854,
+   "title": "[Rust Frontend] Accept an empty tools array like OpenAI",
+   "url": "https://github.com/vllm-project/vllm/pull/65854",
+   "mergedAt": "2026-11-05T11:10:59Z",
+   "author": "BugenZhao",
+   "mergedBy": "BugenZhao",
+   "force_merged": false
+  },
+  {
+   "number": 65852,
+   "title": "[Rust Frontend] Return FastAPI-style JSON 400 errors for bad dev route query strings",
+   "url": "https://github.com/vllm-project/vllm/pull/65852",
+   "mergedAt": "2026-11-05T11:10:28Z",
+   "author": "BugenZhao",
+   "mergedBy": "BugenZhao",
+   "force_merged": false
+  },
+  {
+   "number": 64187,
+   "title": "[Perf][Model Loader] Make the EP weight filter EPLB-aware",
+   "url": "https://github.com/vllm-project/vllm/pull/64187",
+   "mergedAt": "2026-11-05T10:48:09Z",
+   "author": "mrn3088",
+   "mergedBy": "Isotr0py",
+   "force_merged": false
+  },
+  {
+   "number": 65863,
+   "title": "[Rust Frontend] Echo prompt-cache and safety_identifier fields in Responses",
+   "url": "https://github.com/vllm-project/vllm/pull/65863",
+   "mergedAt": "2026-11-05T10:46:18Z",
+   "author": "BugenZhao",
+   "mergedBy": "BugenZhao",
+   "force_merged": false
+  },
+  {
+   "number": 65853,
+   "title": "[Rust Frontend] Support namespace tools in the Responses API",
+   "url": "https://github.com/vllm-project/vllm/pull/65853",
+   "mergedAt": "2026-11-05T10:45:57Z",
+   "author": "BugenZhao",
+   "mergedBy": "BugenZhao",
+   "force_merged": false
+  },
+  {
+   "number": 65851,
+   "title": "[Rust Frontend] Keep whitespace in HY tool-call argument names",
+   "url": "https://github.com/vllm-project/vllm/pull/65851",
+   "mergedAt": "2026-11-05T10:45:36Z",
+   "author": "BugenZhao",
+   "mergedBy": "BugenZhao",
+   "force_merged": false
+  },
+  {
+   "number": 65889,
+   "title": "[CI] Limit ROCm Docker Hub login to image publishing",
+   "url": "https://github.com/vllm-project/vllm/pull/65889",
+   "mergedAt": "2026-11-05T10:42:33Z",
+   "author": "khluu",
+   "mergedBy": "khluu",
+   "force_merged": false
+  },
+  {
+   "number": 65624,
+   "title": "[Rust Frontend] Support echo with truncate_prompt_tokens",
+   "url": "https://github.com/vllm-project/vllm/pull/65624",
+   "mergedAt": "2026-11-05T10:36:29Z",
+   "author": "BugenZhao",
+   "mergedBy": "BugenZhao",
+   "force_merged": false
+  },
+  {
+   "number": 63488,
+   "title": "[Bugfix] Restore engine memory budget after IPC fallback",
+   "url": "https://github.com/vllm-project/vllm/pull/63488",
+   "mergedAt": "2026-11-05T10:15:40Z",
+   "author": "tryryry",
+   "mergedBy": "Isotr0py",
+   "force_merged": false
+  },
+  {
+   "number": 65669,
+   "title": "[CPU][Zen] Update zentorch to 2.14.0.2",
+   "url": "https://github.com/vllm-project/vllm/pull/65669",
+   "mergedAt": "2026-11-05T10:15:13Z",
+   "author": "ganeshr10",
+   "mergedBy": "DarkLight1337",
+   "force_merged": false
+  },
+  {
+   "number": 64095,
+   "title": "[Core][MLA] Cross-layer KV cache sharing for attention layers",
+   "url": "https://github.com/vllm-project/vllm/pull/64095",
+   "mergedAt": "2026-11-05T10:07:01Z",
+   "author": "NickLucche",
+   "mergedBy": "MatthewBonanni",
+   "force_merged": false
+  },
+  {
+   "number": 65623,
+   "title": "[Rust Frontend] Pass assistant and tool content parts to HF templates like Python",
+   "url": "https://github.com/vllm-project/vllm/pull/65623",
+   "mergedAt": "2026-11-05T10:04:15Z",
+   "author": "BugenZhao",
+   "mergedBy": "BugenZhao",
+   "force_merged": false
+  },
+  {
+   "number": 65621,
+   "title": "[Rust Frontend] Accept refusal content parts in assistant messages",
+   "url": "https://github.com/vllm-project/vllm/pull/65621",
+   "mergedAt": "2026-11-05T10:03:48Z",
+   "author": "BugenZhao",
+   "mergedBy": "BugenZhao",
+   "force_merged": false
+  },
+  {
+   "number": 65875,
+   "title": "[Bugfix][CI] Fix duplicate max_num_seqs in Llama Nemotron VL pooling test",
+   "url": "https://github.com/vllm-project/vllm/pull/65875",
+   "mergedAt": "2026-11-05T09:52:24Z",
+   "author": "stefankoncarevic",
+   "mergedBy": "DarkLight1337",
+   "force_merged": false
+  },
+  {
+   "number": 64856,
+   "title": "[Bugfix][MiniMax-M3.1] Reserve MSA Q8KV4 prefill workspace",
+   "url": "https://github.com/vllm-project/vllm/pull/64856",
+   "mergedAt": "2026-11-05T09:47:11Z",
+   "author": "gau-nernst",
+   "mergedBy": "zyongye",
+   "force_merged": false
+  },
+  {
+   "number": 63956,
+   "title": "[Perf][DSA] Token-sharded sparse-MLA prefill under TP; remove indexer row sharding",
+   "url": "https://github.com/vllm-project/vllm/pull/63956",
+   "mergedAt": "2026-11-05T09:42:33Z",
+   "author": "ZJY0516",
+   "mergedBy": "ZJY0516",
+   "force_merged": false
+  },
+  {
+   "number": 63231,
+   "title": "[Core] Change default --block-size from 16 to 64",
+   "url": "https://github.com/vllm-project/vllm/pull/63231",
+   "mergedAt": "2026-11-05T09:29:08Z",
+   "author": "NickLucche",
+   "mergedBy": "NickLucche",
+   "force_merged": false
+  },
+  {
+   "number": 59124,
+   "title": "[ROCm][Perf][MLA] Add opt-in FlyDSL FP8 prefill attention for AITER MLA",
+   "url": "https://github.com/vllm-project/vllm/pull/59124",
+   "mergedAt": "2026-11-05T09:21:40Z",
+   "author": "gbyu-amd",
+   "mergedBy": "shen-shanshan",
+   "force_merged": false
+  },
+  {
+   "number": 64562,
+   "title": "[HiSparse][Core] Move HiSparse hot-page stride alignment into its spec",
+   "url": "https://github.com/vllm-project/vllm/pull/64562",
+   "mergedAt": "2026-11-05T09:08:15Z",
+   "author": "MatthewBonanni",
+   "mergedBy": "LucasWilkinson",
+   "force_merged": false
+  },
+  {
+   "number": 63730,
+   "title": "[ROCm][Perf] Kimi-K3 prefill GEMMs on AITER tuned kernels",
+   "url": "https://github.com/vllm-project/vllm/pull/63730",
+   "mergedAt": "2026-11-05T08:43:15Z",
+   "author": "whx-sjtu",
+   "mergedBy": "shen-shanshan",
+   "force_merged": false
+  },
+  {
+   "number": 63606,
+   "title": "[Bugfix][Frontend] Use the default template of multi-template processors",
+   "url": "https://github.com/vllm-project/vllm/pull/63606",
+   "mergedAt": "2026-11-05T08:10:25Z",
+   "author": "zw-g",
+   "mergedBy": "DarkLight1337",
+   "force_merged": false
+  },
+  {
+   "number": 65750,
+   "title": "[CI] Pass --models=llama3.2 so Rust Frontend Tool Use gets a shard plan",
+   "url": "https://github.com/vllm-project/vllm/pull/65750",
+   "mergedAt": "2026-11-05T07:46:46Z",
+   "author": "Thangnguyenvn98",
+   "mergedBy": "khluu",
+   "force_merged": false
+  },
+  {
+   "number": 64561,
+   "title": "[CI] Shard Spec Decode AL MTP automatically and split its Gemma4 test by dataset",
+   "url": "https://github.com/vllm-project/vllm/pull/64561",
+   "mergedAt": "2026-11-05T07:46:39Z",
+   "author": "Thangnguyenvn98",
+   "mergedBy": "khluu",
+   "force_merged": false
+  },
+  {
+   "number": 64826,
+   "title": "[CI] Run Distributed Features examples once and shard its pytest commands",
+   "url": "https://github.com/vllm-project/vllm/pull/64826",
+   "mergedAt": "2026-11-05T07:46:32Z",
+   "author": "Thangnguyenvn98",
+   "mergedBy": "khluu",
+   "force_merged": false
+  },
+  {
+   "number": 65484,
+   "title": "[CI] Shard Quantization Kernels automatically instead of by hand",
+   "url": "https://github.com/vllm-project/vllm/pull/65484",
+   "mergedAt": "2026-11-05T07:46:25Z",
+   "author": "Thangnguyenvn98",
+   "mergedBy": "khluu",
+   "force_merged": false
+  },
+  {
+   "number": 65834,
+   "title": "[Docs] Fix missing MLA verify parameter types in API docs",
+   "url": "https://github.com/vllm-project/vllm/pull/65834",
+   "mergedAt": "2026-11-05T07:43:28Z",
+   "author": "Liamup777",
+   "mergedBy": "aoshen02",
+   "force_merged": false
+  },
+  {
+   "number": 64510,
+   "title": "[Perf] Enable native small-head kernels in SM90 sparse FlashMLA",
+   "url": "https://github.com/vllm-project/vllm/pull/64510",
+   "mergedAt": "2026-11-05T07:31:37Z",
+   "author": "chaunceyjiang",
+   "mergedBy": "chaunceyjiang",
+   "force_merged": false
+  },
+  {
+   "number": 51808,
+   "title": "[Online quantization] Support activation quant key override for online MXFP4 linear/MOE quant methods",
+   "url": "https://github.com/vllm-project/vllm/pull/51808",
+   "mergedAt": "2026-11-05T07:29:09Z",
+   "author": "fxmarty-amd",
+   "mergedBy": "DarkLight1337",
+   "force_merged": false
+  },
+  {
+   "number": 65812,
+   "title": "[Bugfix] Honor checkpoint FP8 KV scales in Qwen4Exp QSA",
+   "url": "https://github.com/vllm-project/vllm/pull/65812",
+   "mergedAt": "2026-11-05T07:22:42Z",
+   "author": "lHrHenry233",
+   "mergedBy": "gau-nernst",
+   "force_merged": false
+  },
+  {
+   "number": 64880,
+   "title": "[Bugfix][LoRA] Apply DeepSeek-V4 compressor and wo_a adapters",
+   "url": "https://github.com/vllm-project/vllm/pull/64880",
+   "mergedAt": "2026-11-05T07:20:28Z",
+   "author": "HollowMan6",
+   "mergedBy": "jeejeelee",
+   "force_merged": false
+  },
+  {
+   "number": 65494,
+   "title": "[Build] Update DeepGEMM pin to latest main",
+   "url": "https://github.com/vllm-project/vllm/pull/65494",
+   "mergedAt": "2026-11-05T07:17:35Z",
+   "author": "qqaatw",
+   "mergedBy": "Harry-Chen",
+   "force_merged": false
+  },
+  {
+   "number": 65817,
+   "title": "[Recipe] Add ERNIE-5.5-Flash recipe",
+   "url": "https://github.com/vllm-project/vllm/pull/65817",
+   "mergedAt": "2026-11-05T07:14:09Z",
+   "author": "jackyYang6",
+   "mergedBy": "esmeetu",
+   "force_merged": false
+  },
+  {
+   "number": 65625,
+   "title": "[Rust Frontend] Support n > 1 choices",
+   "url": "https://github.com/vllm-project/vllm/pull/65625",
+   "mergedAt": "2026-11-05T07:14:02Z",
+   "author": "BugenZhao",
+   "mergedBy": "BugenZhao",
+   "force_merged": false
+  },
+  {
+   "number": 63117,
+   "title": "[Bugfix][ROCm] Take the AITER MLA KV cache dtype from the group's spec",
+   "url": "https://github.com/vllm-project/vllm/pull/63117",
+   "mergedAt": "2026-11-05T06:56:07Z",
+   "author": "BaoYunkai",
+   "mergedBy": "shen-shanshan",
+   "force_merged": false
+  },
+  {
+   "number": 65088,
+   "title": "[Bugfix][Model] Fix Ling3 SwiGLU clamping",
+   "url": "https://github.com/vllm-project/vllm/pull/65088",
+   "mergedAt": "2026-11-05T06:11:11Z",
+   "author": "zexplorerhj",
+   "mergedBy": "vllm-bot",
+   "force_merged": true
+  },
+  {
+   "number": 64886,
+   "title": "[Bugfix][ROCm][Kimi-K3] Refresh derived weight copies after in-place weight writes",
+   "url": "https://github.com/vllm-project/vllm/pull/64886",
+   "mergedAt": "2026-11-05T06:09:06Z",
+   "author": "okorzh-amd",
+   "mergedBy": "shen-shanshan",
+   "force_merged": false
+  },
+  {
+   "number": 63891,
+   "title": "[ROCm][Perf][DSv4.1] Run DSpark's fused Markov sampling on gfx950 with --monokernel",
+   "url": "https://github.com/vllm-project/vllm/pull/63891",
+   "mergedAt": "2026-11-05T06:08:46Z",
+   "author": "okorzh-amd",
+   "mergedBy": "shen-shanshan",
+   "force_merged": false
+  },
+  {
+   "number": 63888,
+   "title": "[ROCm][Perf][DSv4.1] Skip the top-k -1 fill on the rows vLLM's decode top-k writes",
+   "url": "https://github.com/vllm-project/vllm/pull/63888",
+   "mergedAt": "2026-11-05T06:08:23Z",
+   "author": "okorzh-amd",
+   "mergedBy": "shen-shanshan",
+   "force_merged": false
+  },
+  {
+   "number": 65806,
+   "title": "[Bugfix][MiniMax-M3] Initialize the shard record in the indexer QKV layer",
+   "url": "https://github.com/vllm-project/vllm/pull/65806",
+   "mergedAt": "2026-11-05T05:49:34Z",
+   "author": "gau-nernst",
+   "mergedBy": "gau-nernst",
+   "force_merged": false
+  },
+  {
+   "number": 65776,
+   "title": "[CI Failure] Move Multimodal Models (Extended Pooling) to h200_35gb",
+   "url": "https://github.com/vllm-project/vllm/pull/65776",
+   "mergedAt": "2026-11-05T05:39:19Z",
+   "author": "noooop",
+   "mergedBy": "khluu",
+   "force_merged": false
+  },
+  {
+   "number": 65805,
+   "title": "[XPU] skipp unsupported test cases in CI",
+   "url": "https://github.com/vllm-project/vllm/pull/65805",
+   "mergedAt": "2026-11-05T05:15:17Z",
+   "author": "yma11",
+   "mergedBy": "jikunshang",
+   "force_merged": false
+  },
+  {
+   "number": 64898,
+   "title": "[Perf][Qwen4Exp] Fuse HyperConnection up projection and gate mix for long prefills",
+   "url": "https://github.com/vllm-project/vllm/pull/64898",
+   "mergedAt": "2026-11-05T05:12:16Z",
+   "author": "Gin-Sin",
+   "mergedBy": "gau-nernst",
+   "force_merged": false
+  },
+  {
+   "number": 65412,
+   "title": "[Bugfix] Granite4Vision: strip padding tiles for list pixel_values",
+   "url": "https://github.com/vllm-project/vllm/pull/65412",
+   "mergedAt": "2026-11-05T05:04:06Z",
+   "author": "artem-spector",
+   "mergedBy": "DarkLight1337",
+   "force_merged": false
+  },
+  {
+   "number": 65810,
+   "title": "[CI] Drop the removed input_dtype arg from the Zen DA8W4 test",
+   "url": "https://github.com/vllm-project/vllm/pull/65810",
+   "mergedAt": "2026-11-05T05:01:49Z",
+   "author": "khluu",
+   "mergedBy": "khluu",
+   "force_merged": false
+  },
+  {
+   "number": 65692,
+   "title": "[Perf][Qwen4Exp] Route the PLE shard copy through copy_weight_",
+   "url": "https://github.com/vllm-project/vllm/pull/65692",
+   "mergedAt": "2026-11-05T04:56:42Z",
+   "author": "JimmyToluene",
+   "mergedBy": "gau-nernst",
+   "force_merged": false
+  },
+  {
+   "number": 64695,
+   "title": "[Rust Frontend] Generate through an `Llm` trait",
+   "url": "https://github.com/vllm-project/vllm/pull/64695",
+   "mergedAt": "2026-11-05T04:39:07Z",
+   "author": "BugenZhao",
+   "mergedBy": "BugenZhao",
+   "force_merged": false
+  },
+  {
+   "number": 61292,
+   "title": "[KV Connector][Mooncake] Start async lookup when a request arrives via on_new_request",
+   "url": "https://github.com/vllm-project/vllm/pull/61292",
+   "mergedAt": "2026-11-05T04:38:29Z",
+   "author": "Dao007forever",
+   "mergedBy": "njhill",
+   "force_merged": false
+  },
+  {
+   "number": 65294,
+   "title": "[Rust Frontend] Keep developer messages in place for templates without the role",
+   "url": "https://github.com/vllm-project/vllm/pull/65294",
+   "mergedAt": "2026-11-05T04:38:12Z",
+   "author": "BugenZhao",
+   "mergedBy": "BugenZhao",
+   "force_merged": false
+  },
+  {
+   "number": 65293,
+   "title": "[Rust Frontend] Choose chat content format by probing the template",
+   "url": "https://github.com/vllm-project/vllm/pull/65293",
+   "mergedAt": "2026-11-05T04:38:10Z",
+   "author": "BugenZhao",
+   "mergedBy": "BugenZhao",
+   "force_merged": false
+  },
+  {
+   "number": 60824,
+   "title": "[ZenCPU] Add zen5 CPU tests reusing the pushed zen image",
+   "url": "https://github.com/vllm-project/vllm/pull/60824",
+   "mergedAt": "2026-11-05T04:38:03Z",
+   "author": "Chinmay-Kulkarni-AMD",
+   "mergedBy": "AndreasKaratzas",
+   "force_merged": false
+  },
+  {
+   "number": 63711,
+   "title": "[CPU][Zen] Enable Laguna MoE on Zen CPU via grouped W8A16 (DA8W8)",
+   "url": "https://github.com/vllm-project/vllm/pull/63711",
+   "mergedAt": "2026-11-05T04:29:46Z",
+   "author": "ganeshr10",
+   "mergedBy": "DarkLight1337",
+   "force_merged": false
+  },
+  {
+   "number": 62702,
+   "title": "[Perf][Core] Keep prompt token ids as int32 buffers",
+   "url": "https://github.com/vllm-project/vllm/pull/62702",
+   "mergedAt": "2026-11-05T04:15:36Z",
+   "author": "Juntian777",
+   "mergedBy": "njhill",
+   "force_merged": false
+  },
+  {
+   "number": 62725,
+   "title": "[ROCm][Bugfix] Serve gfx942 MLA verify past 4 tokens with a Triton kernel",
+   "url": "https://github.com/vllm-project/vllm/pull/62725",
+   "mergedAt": "2026-11-05T04:02:08Z",
+   "author": "AndreasKaratzas",
+   "mergedBy": "AndreasKaratzas",
+   "force_merged": false
+  },
+  {
+   "number": 65773,
+   "title": "[Core] Cheapen the spin while waiting for model output",
+   "url": "https://github.com/vllm-project/vllm/pull/65773",
+   "mergedAt": "2026-11-05T03:27:17Z",
+   "author": "njhill",
+   "mergedBy": "WoosukKwon",
+   "force_merged": false
+  },
+  {
+   "number": 65753,
+   "title": "[CI] Consolidate per-version model labels into vendor/family labels",
+   "url": "https://github.com/vllm-project/vllm/pull/65753",
+   "mergedAt": "2026-11-05T03:26:00Z",
+   "author": "jcotant-inferact",
+   "mergedBy": "WoosukKwon",
+   "force_merged": false
+  },
+  {
+   "number": 65763,
+   "title": "[CI][Kernels] Make the MiniMax-M3 decode top-k test deterministic",
+   "url": "https://github.com/vllm-project/vllm/pull/65763",
+   "mergedAt": "2026-11-05T02:57:12Z",
+   "author": "khluu",
+   "mergedBy": "njhill",
+   "force_merged": false
+  },
+  {
+   "number": 63027,
+   "title": "[ROCm][Perf][DSv4.1] Mono: tuned K1/K2 for the TP2 compress-ratio-2 layers on MI355X",
+   "url": "https://github.com/vllm-project/vllm/pull/63027",
+   "mergedAt": "2026-11-05T02:42:10Z",
+   "author": "chao-xu-spec",
+   "mergedBy": "shen-shanshan",
+   "force_merged": false
+  },
+  {
+   "number": 65577,
+   "title": "[MM] Support mm_device_do_normalize for Gemma 4",
+   "url": "https://github.com/vllm-project/vllm/pull/65577",
+   "mergedAt": "2026-11-05T02:40:49Z",
+   "author": "Alex-Wengg",
+   "mergedBy": "noooop",
+   "force_merged": false
+  },
+  {
+   "number": 65593,
+   "title": "[Bugfix][EC Connector] Make control-plane ZMQ heartbeats take effect",
+   "url": "https://github.com/vllm-project/vllm/pull/65593",
+   "mergedAt": "2026-11-05T02:38:39Z",
+   "author": "CJJ1008",
+   "mergedBy": "Isotr0py",
+   "force_merged": false
+  },
+  {
+   "number": 65237,
+   "title": "[Bugfix][KV Offload] Keep lazy SimpleCPUOffload stores at the GPU eviction end",
+   "url": "https://github.com/vllm-project/vllm/pull/65237",
+   "mergedAt": "2026-11-05T02:23:53Z",
+   "author": "Juntian777",
+   "mergedBy": "ivanium",
+   "force_merged": false
+  },
+  {
+   "number": 60762,
+   "title": "[Bugfix][DSv4.1] Declare 64-token kernel blocks for SM120 sparse backends",
+   "url": "https://github.com/vllm-project/vllm/pull/60762",
+   "mergedAt": "2026-11-05T01:36:01Z",
+   "author": "xzwgit",
+   "mergedBy": "gau-nernst",
+   "force_merged": false
+  },
+  {
+   "number": 60895,
+   "title": "[Perf][GLM-5.3-Flash] DeepGEMM FP8 MegaMoE with fused shared experts",
+   "url": "https://github.com/vllm-project/vllm/pull/60895",
+   "mergedAt": "2026-11-05T01:11:34Z",
+   "author": "gcanlin",
+   "mergedBy": "gau-nernst",
+   "force_merged": false
+  },
+  {
+   "number": 65598,
+   "title": "[Bugfix][Attention] Keep FlashInfer TRTLLM prefill query offsets in a persistent buffer",
+   "url": "https://github.com/vllm-project/vllm/pull/65598",
+   "mergedAt": "2026-11-05T01:01:48Z",
+   "author": "Pb314314",
+   "mergedBy": "TheEpicDolphin",
+   "force_merged": false
+  },
+  {
+   "number": 65762,
+   "title": "[CI] Let ci-selector decide csrc/ changes on CUDA",
+   "url": "https://github.com/vllm-project/vllm/pull/65762",
+   "mergedAt": "2026-11-05T00:18:15Z",
+   "author": "khluu",
+   "mergedBy": "khluu",
+   "force_merged": false
+  },
+  {
+   "number": 65552,
+   "title": "[CI][DSv4.1] Give the MXFP8 linear test stub a params_dtype",
+   "url": "https://github.com/vllm-project/vllm/pull/65552",
+   "mergedAt": "2026-11-05T00:17:38Z",
+   "author": "khluu",
+   "mergedBy": "khluu",
+   "force_merged": false
+  },
+  {
+   "number": 64677,
+   "title": "[Bugfix][UMBP] Copy every KV cache layout's per-head runs",
+   "url": "https://github.com/vllm-project/vllm/pull/64677",
+   "mergedAt": "2026-11-04T23:55:31Z",
+   "author": "AndreasKaratzas",
+   "mergedBy": "ivanium",
+   "force_merged": false
+  },
+  {
+   "number": 65234,
+   "title": "[CI] Shard Multimodal Models (Extended Generation 1) automatically, with spawned engines",
+   "url": "https://github.com/vllm-project/vllm/pull/65234",
+   "mergedAt": "2026-11-04T23:48:42Z",
+   "author": "Thangnguyenvn98",
+   "mergedBy": "khluu",
+   "force_merged": false
+  },
+  {
+   "number": 65585,
+   "title": "[CI] Enroll the MI300 Batch Invariance (Distributed) mirror in automatic sharding",
+   "url": "https://github.com/vllm-project/vllm/pull/65585",
+   "mergedAt": "2026-11-04T23:48:35Z",
+   "author": "Thangnguyenvn98",
+   "mergedBy": "khluu",
+   "force_merged": false
+  },
+  {
+   "number": 64479,
+   "title": "[XPU][Perf] Reuse GDN metadata across KV cache groups on XPU",
+   "url": "https://github.com/vllm-project/vllm/pull/64479",
+   "mergedAt": "2026-11-04T23:45:04Z",
+   "author": "gc-fu",
+   "mergedBy": "jikunshang",
+   "force_merged": false
+  },
+  {
+   "number": 62881,
+   "title": "[Bugfix][Test] Rotate KV into RHT domain in the INT4 unified attn test",
+   "url": "https://github.com/vllm-project/vllm/pull/62881",
+   "mergedAt": "2026-11-04T23:10:05Z",
+   "author": "dudilester",
+   "mergedBy": "jikunshang",
+   "force_merged": false
+  },
+  {
+   "number": 65473,
+   "title": "[CI] Run test_depyf_integration in a spawned process",
+   "url": "https://github.com/vllm-project/vllm/pull/65473",
+   "mergedAt": "2026-11-04T23:02:18Z",
+   "author": "Thangnguyenvn98",
+   "mergedBy": "khluu",
+   "force_merged": false
+  },
+  {
+   "number": 65553,
+   "title": "[GLM 5.3 Perf] Enable fp8 kv cache for glm 5.3 flash draft model dspark, 960MB GPU memory saved each rank",
+   "url": "https://github.com/vllm-project/vllm/pull/65553",
+   "mergedAt": "2026-11-04T22:55:49Z",
+   "author": "yewentao256",
+   "mergedBy": "yewentao256",
+   "force_merged": false
+  },
+  {
+   "number": 59526,
+   "title": "[CI] Run pip-compile pre-commit hooks only when requirements change",
+   "url": "https://github.com/vllm-project/vllm/pull/59526",
+   "mergedAt": "2026-11-04T21:23:41Z",
+   "author": "tahsintunan",
+   "mergedBy": "khluu",
+   "force_merged": false
+  },
+  {
+   "number": 55688,
+   "title": "[Mamba] Unify FI ReplaySSM STP/MTP/Prefix Caching Lifecycle",
+   "url": "https://github.com/vllm-project/vllm/pull/55688",
+   "mergedAt": "2026-11-04T21:16:31Z",
+   "author": "askliar",
+   "mergedBy": "khluu",
+   "force_merged": false
+  },
+  {
+   "number": 65399,
+   "title": "[Bugfix][Scheduler] Respect disabled chunked prefill for multimodal requests",
+   "url": "https://github.com/vllm-project/vllm/pull/65399",
+   "mergedAt": "2026-11-04T21:13:26Z",
+   "author": "jzakrzew",
+   "mergedBy": "njhill",
+   "force_merged": false
+  },
+  {
+   "number": 65540,
+   "title": "[Build] Marlin: drop SM12x-specific cubins and rely on compute_80 PTX",
+   "url": "https://github.com/vllm-project/vllm/pull/65540",
+   "mergedAt": "2026-11-04T21:03:33Z",
+   "author": "mgoin",
+   "mergedBy": "vllm-bot",
+   "force_merged": true
+  },
+  {
+   "number": 65542,
+   "title": "[Kernel] Marlin: remove 8-bit (INT8/FP8) activation support, rely on Humming",
+   "url": "https://github.com/vllm-project/vllm/pull/65542",
+   "mergedAt": "2026-11-04T21:02:12Z",
+   "author": "mgoin",
+   "mergedBy": "mgoin",
+   "force_merged": false
+  },
+  {
+   "number": 62057,
+   "title": "[ROCm][Model] Add Beam 1.0 support on ROCm ",
+   "url": "https://github.com/vllm-project/vllm/pull/62057",
+   "mergedAt": "2026-11-04T20:52:00Z",
+   "author": "jamesETsmith",
+   "mergedBy": "AndreasKaratzas",
+   "force_merged": false
+  },
+  {
+   "number": 64760,
+   "title": "[GLM 5.3 Perf] Sorted-A TMA for FP8 MoE down projection on H200, 6.0%~ 7.6% E2E Throughput Improvement",
+   "url": "https://github.com/vllm-project/vllm/pull/64760",
+   "mergedAt": "2026-11-04T20:08:12Z",
+   "author": "yewentao256",
+   "mergedBy": "vllm-bot",
+   "force_merged": true
+  },
+  {
+   "number": 65522,
+   "title": "[Bugfix] Keep the HiSparse FlashInfer all-reduce backend on lazy workspace creation",
+   "url": "https://github.com/vllm-project/vllm/pull/65522",
+   "mergedAt": "2026-11-04T20:07:51Z",
+   "author": "MatthewBonanni",
+   "mergedBy": "MatthewBonanni",
+   "force_merged": false
+  },
+  {
+   "number": 65198,
+   "title": "[GLM 5.3 Perf] Align draft model kv cache dtype align with target, 50% GPU Memory saved for each draft model",
+   "url": "https://github.com/vllm-project/vllm/pull/65198",
+   "mergedAt": "2026-11-04T20:01:48Z",
+   "author": "yewentao256",
+   "mergedBy": "mgoin",
+   "force_merged": false
+  },
+  {
+   "number": 64782,
+   "title": "[Bugfix][CUDA] Use CUDA memory accounting for integrated GPUs on WSL",
+   "url": "https://github.com/vllm-project/vllm/pull/64782",
+   "mergedAt": "2026-11-04T20:01:22Z",
+   "author": "eugr",
+   "mergedBy": "mgoin",
+   "force_merged": false
+  },
+  {
+   "number": 59747,
+   "title": "[Bugfix][NIXL] Reject push handshakes between different P/D block sizes",
+   "url": "https://github.com/vllm-project/vllm/pull/59747",
+   "mergedAt": "2026-11-04T19:34:18Z",
+   "author": "lucamotz",
+   "mergedBy": "NickLucche",
+   "force_merged": false
+  },
+  {
+   "number": 65537,
+   "title": "[MiniMax-M3] Support sequence parallelism with pipeline parallelism",
+   "url": "https://github.com/vllm-project/vllm/pull/65537",
+   "mergedAt": "2026-11-04T19:24:53Z",
+   "author": "xsxszab",
+   "mergedBy": "WoosukKwon",
+   "force_merged": false
+  },
+  {
+   "number": 64129,
+   "title": "[Perf][DCP] Sparse indexer: key only significant bits in the DCP top-k merge",
+   "url": "https://github.com/vllm-project/vllm/pull/64129",
+   "mergedAt": "2026-11-04T19:19:26Z",
+   "author": "NickLucche",
+   "mergedBy": "robertgshaw2-redhat",
+   "force_merged": false
+  },
+  {
+   "number": 65689,
+   "title": "[Bugfix][Multimodal] Don't validate model-built dummy inputs against mm limits",
+   "url": "https://github.com/vllm-project/vllm/pull/65689",
+   "mergedAt": "2026-11-04T19:14:38Z",
+   "author": "cjackal",
+   "mergedBy": "NickLucche",
+   "force_merged": false
+  },
+  {
+   "number": 64016,
+   "title": "[Model] Add Unlimited-OCR-2 DASH attention support",
+   "url": "https://github.com/vllm-project/vllm/pull/64016",
+   "mergedAt": "2026-11-04T18:54:53Z",
+   "author": "gty111",
+   "mergedBy": "Isotr0py",
+   "force_merged": false
+  },
+  {
+   "number": 65567,
+   "title": "[CI] Run H100 fusion config sweeps and batch invariance nightly only",
+   "url": "https://github.com/vllm-project/vllm/pull/65567",
+   "mergedAt": "2026-11-04T18:47:56Z",
+   "author": "khluu",
+   "mergedBy": "khluu",
+   "force_merged": false
+  },
+  {
+   "number": 60919,
+   "title": "[JIT][ROCm] Fully warmup GLM-5.3-Flash",
+   "url": "https://github.com/vllm-project/vllm/pull/60919",
+   "mergedAt": "2026-11-04T18:42:45Z",
+   "author": "simondanielsson",
+   "mergedBy": "dllehr-amd",
+   "force_merged": false
+  },
+  {
+   "number": 64656,
+   "title": "[Test][UMBP] Restore a Mamba2 hybrid end to end through UMBP",
+   "url": "https://github.com/vllm-project/vllm/pull/64656",
+   "mergedAt": "2026-11-04T18:29:28Z",
+   "author": "AndreasKaratzas",
+   "mergedBy": "tjtanaa",
+   "force_merged": false
+  },
+  {
+   "number": 54625,
+   "title": "[Core] Add cache-aware admission ordering",
+   "url": "https://github.com/vllm-project/vllm/pull/54625",
+   "mergedAt": "2026-11-04T17:53:03Z",
+   "author": "fululi12",
+   "mergedBy": "dllehr-amd",
+   "force_merged": false
+  },
+  {
+   "number": 63367,
+   "title": "[ROCm][DSv4.1] Shard the Engram gate so TP ranks gather only the value slice",
+   "url": "https://github.com/vllm-project/vllm/pull/63367",
+   "mergedAt": "2026-11-04T17:46:47Z",
+   "author": "cpersson-amd",
+   "mergedBy": "dllehr-amd",
+   "force_merged": false
+  },
+  {
+   "number": 62836,
+   "title": "[Bugfix] Fix GPTQ checkpoint loading for PLaMo3",
+   "url": "https://github.com/vllm-project/vllm/pull/62836",
+   "mergedAt": "2026-11-04T17:43:16Z",
+   "author": "okdshin",
+   "mergedBy": "mgoin",
+   "force_merged": false
+  },
+  {
+   "number": 60181,
+   "title": "[Bugfix][NIXL] Fix host-buffer h2d sync overwriting received KV",
+   "url": "https://github.com/vllm-project/vllm/pull/60181",
+   "mergedAt": "2026-11-04T17:19:19Z",
+   "author": "lucamotz",
+   "mergedBy": "NickLucche",
+   "force_merged": false
+  },
+  {
+   "number": 55835,
+   "title": "[Bugfix][Distributed] Keep cross-node MNNVL groups off CUDA IPC all-reduce",
+   "url": "https://github.com/vllm-project/vllm/pull/55835",
+   "mergedAt": "2026-11-04T16:50:54Z",
+   "author": "SiluPanda",
+   "mergedBy": "wzhao18",
+   "force_merged": false
+  },
+  {
+   "number": 65438,
+   "title": "[Model] Optimize Muse Spark GEMM and communication-norm fusion",
+   "url": "https://github.com/vllm-project/vllm/pull/65438",
+   "mergedAt": "2026-11-04T16:44:18Z",
+   "author": "jeejeelee",
+   "mergedBy": "jeejeelee",
+   "force_merged": false
+  },
+  {
+   "number": 65302,
+   "title": "[Model] Add ZAYA1 support",
+   "url": "https://github.com/vllm-project/vllm/pull/65302",
+   "mergedAt": "2026-11-04T16:40:11Z",
+   "author": "mgoin",
+   "mergedBy": "mgoin",
+   "force_merged": false
+  },
+  {
+   "number": 61770,
+   "title": "[Bugfix][ROCm][Qwen4Exp] Remap Quark layer names for the MTP draft model",
+   "url": "https://github.com/vllm-project/vllm/pull/61770",
+   "mergedAt": "2026-11-04T16:36:50Z",
+   "author": "tpopp",
+   "mergedBy": "dllehr-amd",
+   "force_merged": false
+  },
+  {
+   "number": 64583,
+   "title": "[Bugfix][Kimi-K3] Fall back from the latent-MoE tail fusion under sleep mode",
+   "url": "https://github.com/vllm-project/vllm/pull/64583",
+   "mergedAt": "2026-11-04T16:20:31Z",
+   "author": "aleksandr-inherent",
+   "mergedBy": "aoshen02",
+   "force_merged": false
+  },
+  {
+   "number": 64937,
+   "title": "[Bugfix][Benchmark] Count reasoning_content deltas as streamed outputs in chat",
+   "url": "https://github.com/vllm-project/vllm/pull/64937",
+   "mergedAt": "2026-11-04T16:14:11Z",
+   "author": "Than0316",
+   "mergedBy": "DarkLight1337",
+   "force_merged": false
+  },
+  {
+   "number": 65466,
+   "title": "[Core] Handle new requests and aborts while waiting for model output",
+   "url": "https://github.com/vllm-project/vllm/pull/65466",
+   "mergedAt": "2026-11-04T16:10:35Z",
+   "author": "njhill",
+   "mergedBy": "njhill",
+   "force_merged": false
+  },
+  {
+   "number": 65688,
+   "title": "[Recipe] Kimi-K3.1-Pro: pin Docker images, drop pip, add Rubin VR200",
+   "url": "https://github.com/vllm-project/vllm/pull/65688",
+   "mergedAt": "2026-11-04T16:09:48Z",
+   "author": "esmeetu",
+   "mergedBy": "ywang96",
+   "force_merged": false
+  },
+  {
+   "number": 65684,
+   "title": "[Recipe] Add Kimi K3.1 Pro recipes",
+   "url": "https://github.com/vllm-project/vllm/pull/65684",
+   "mergedAt": "2026-11-04T15:52:07Z",
+   "author": "ZJY0516",
+   "mergedBy": "ZJY0516",
+   "force_merged": false
+  },
+  {
+   "number": 59802,
+   "title": "[ROCm][DSv4.1][Perf] Overlap the mHC gate projection with attention and FFN",
+   "url": "https://github.com/vllm-project/vllm/pull/59802",
+   "mergedAt": "2026-11-04T15:36:15Z",
+   "author": "cpersson-amd",
+   "mergedBy": "dllehr-amd",
+   "force_merged": false
+  },
+  {
+   "number": 61463,
+   "title": "[Bugfix][Kernel] Sync cluster before DSMEM stores in ll_bf16 split-K router GEMM",
+   "url": "https://github.com/vllm-project/vllm/pull/61463",
+   "mergedAt": "2026-11-04T15:31:07Z",
+   "author": "MatthewBonanni",
+   "mergedBy": "MatthewBonanni",
+   "force_merged": false
+  },
+  {
+   "number": 65425,
+   "title": "[ROCm][CI] Restore the Torch Stable ABI Audit mirror with a locked audit tool",
+   "url": "https://github.com/vllm-project/vllm/pull/65425",
+   "mergedAt": "2026-11-04T15:28:01Z",
+   "author": "stefankoncarevic",
+   "mergedBy": "AndreasKaratzas",
+   "force_merged": false
+  },
+  {
+   "number": 65641,
+   "title": "[ROCm][CI] Skip the GPU coredump in MonoKernel fault-injection tests",
+   "url": "https://github.com/vllm-project/vllm/pull/65641",
+   "mergedAt": "2026-11-04T15:24:23Z",
+   "author": "stefankoncarevic",
+   "mergedBy": "AndreasKaratzas",
+   "force_merged": false
+  },
+  {
+   "number": 62172,
+   "title": "[Perf][Kernel] Let cooperative_topk read the BF16 indexer logits",
+   "url": "https://github.com/vllm-project/vllm/pull/62172",
+   "mergedAt": "2026-11-04T15:20:05Z",
+   "author": "haosdent",
+   "mergedBy": "LucasWilkinson",
+   "force_merged": false
+  },
+  {
+   "number": 64935,
+   "title": "[Bugfix][Frontend] Report reasoning tokens in batched chat completions",
+   "url": "https://github.com/vllm-project/vllm/pull/64935",
+   "mergedAt": "2026-11-04T14:58:07Z",
+   "author": "GCSimba",
+   "mergedBy": "DarkLight1337",
+   "force_merged": false
+  },
   {
    "number": 64762,
    "title": "[CI] Use test models from the vllm-project Hub org",
@@ -11511,7 +12555,7 @@
    "title": "[Bugfix][LoRA] Keep failed activations retryable",
    "url": "https://github.com/vllm-project/vllm/pull/61618",
    "mergedAt": "2026-10-19T02:18:34Z",
-   "author": "LeslieWylie",
+   "author": "YaoleWu",
    "mergedBy": "jeejeelee",
    "force_merged": false
   },
@@ -74190,348 +75234,6 @@
    "author": "hongxiayang",
    "mergedBy": "vllm-bot",
    "force_merged": true
-  },
-  {
-   "number": 38920,
-   "title": "[Docs] add cache directory security guidance",
-   "url": "https://github.com/vllm-project/vllm/pull/38920",
-   "mergedAt": "2026-05-06T23:54:29Z",
-   "author": "russellb",
-   "mergedBy": "sfeng33",
-   "force_merged": false
-  },
-  {
-   "number": 41840,
-   "title": "[ROCm][CI] Remove `TORCH_NCCL_BLOCKING_WAIT=1` After Bugfix In ROCm 7.2",
-   "url": "https://github.com/vllm-project/vllm/pull/41840",
-   "mergedAt": "2026-05-06T23:37:11Z",
-   "author": "micah-wil",
-   "mergedBy": "robertgshaw2-redhat",
-   "force_merged": false
-  },
-  {
-   "number": 41665,
-   "title": "[Bugfix] Fix condition to clear persistent topk so that it can be captured regardless",
-   "url": "https://github.com/vllm-project/vllm/pull/41665",
-   "mergedAt": "2026-05-06T23:17:49Z",
-   "author": "zyongye",
-   "mergedBy": "ywang96",
-   "force_merged": false
-  },
-  {
-   "number": 41801,
-   "title": "[Bugfix] DeepSeekV32/v4: respect string='true|false' attribute andunwrap arguments/input wrapper",
-   "url": "https://github.com/vllm-project/vllm/pull/41801",
-   "mergedAt": "2026-05-06T21:48:02Z",
-   "author": "chaunceyjiang",
-   "mergedBy": "sfeng33",
-   "force_merged": false
-  },
-  {
-   "number": 40820,
-   "title": "Fix Qwen3 streaming content routing",
-   "url": "https://github.com/vllm-project/vllm/pull/40820",
-   "mergedAt": "2026-05-06T21:22:01Z",
-   "author": "xy3xy3",
-   "mergedBy": "robertgshaw2-redhat",
-   "force_merged": false
-  },
-  {
-   "number": 41832,
-   "title": "[Doc] Add ModernBertForSequenceClassification to scoring.md cross-en\u2026",
-   "url": "https://github.com/vllm-project/vllm/pull/41832",
-   "mergedAt": "2026-05-06T21:17:57Z",
-   "author": "JLiu4Coding",
-   "mergedBy": "noooop",
-   "force_merged": false
-  },
-  {
-   "number": 41857,
-   "title": "[CI] Enable gemma4 parser test on CI",
-   "url": "https://github.com/vllm-project/vllm/pull/41857",
-   "mergedAt": "2026-05-06T20:25:35Z",
-   "author": "sfeng33",
-   "mergedBy": "sfeng33",
-   "force_merged": false
-  },
-  {
-   "number": 41844,
-   "title": "Upgrade tpu-inference to v0.19.0",
-   "url": "https://github.com/vllm-project/vllm/pull/41844",
-   "mergedAt": "2026-05-06T18:41:38Z",
-   "author": "jcyang43",
-   "mergedBy": "hmellor",
-   "force_merged": false
-  },
-  {
-   "number": 39324,
-   "title": "[Bugfix] Align block table for TRTLLM MLA edge-case",
-   "url": "https://github.com/vllm-project/vllm/pull/39324",
-   "mergedAt": "2026-05-06T18:17:03Z",
-   "author": "benchislett",
-   "mergedBy": "benchislett",
-   "force_merged": false
-  },
-  {
-   "number": 41133,
-   "title": "[Bugfix] Fix token loss in PP mode which causes degraded accuracy",
-   "url": "https://github.com/vllm-project/vllm/pull/41133",
-   "mergedAt": "2026-05-06T18:07:32Z",
-   "author": "starkwj",
-   "mergedBy": "yewentao256",
-   "force_merged": false
-  },
-  {
-   "number": 38296,
-   "title": "[ROCm] aiter_unified_attn fp8 q scale refactor",
-   "url": "https://github.com/vllm-project/vllm/pull/38296",
-   "mergedAt": "2026-05-06T16:11:37Z",
-   "author": "divakar-amd",
-   "mergedBy": "tjtanaa",
-   "force_merged": false
-  },
-  {
-   "number": 41800,
-   "title": "[Bugfix] Account for truncate_prompt_tokens when computing max_tokens",
-   "url": "https://github.com/vllm-project/vllm/pull/41800",
-   "mergedAt": "2026-05-06T16:10:18Z",
-   "author": "viktorpusTT",
-   "mergedBy": "DarkLight1337",
-   "force_merged": false
-  },
-  {
-   "number": 41423,
-   "title": "[Bugfix] Fix spawn_new_process_for_each_test silently swallowing test failures",
-   "url": "https://github.com/vllm-project/vllm/pull/41423",
-   "mergedAt": "2026-05-06T15:17:16Z",
-   "author": "dzhengAP",
-   "mergedBy": "ProExpertProg",
-   "force_merged": false
-  },
-  {
-   "number": 41745,
-   "title": "[Spec Decode] Add Gemma4 MTP speculative decoding support",
-   "url": "https://github.com/vllm-project/vllm/pull/41745",
-   "mergedAt": "2026-05-06T14:39:30Z",
-   "author": "lucianommartins",
-   "mergedBy": "DarkLight1337",
-   "force_merged": false
-  },
-  {
-   "number": 41795,
-   "title": "[KV Offload] Return None from lookup() for in-flight blocks",
-   "url": "https://github.com/vllm-project/vllm/pull/41795",
-   "mergedAt": "2026-05-06T14:31:22Z",
-   "author": "ronensc",
-   "mergedBy": "orozery",
-   "force_merged": false
-  },
-  {
-   "number": 40148,
-   "title": "fix(openai): tolerate empty content in forced tool choice",
-   "url": "https://github.com/vllm-project/vllm/pull/40148",
-   "mergedAt": "2026-05-06T14:16:04Z",
-   "author": "QwertyJack",
-   "mergedBy": "chaunceyjiang",
-   "force_merged": false
-  },
-  {
-   "number": 40731,
-   "title": "nixl refactor: new transfer design",
-   "url": "https://github.com/vllm-project/vllm/pull/40731",
-   "mergedAt": "2026-05-06T13:16:25Z",
-   "author": "ZhanqiuHu",
-   "mergedBy": "vllm-bot",
-   "force_merged": true
-  },
-  {
-   "number": 41799,
-   "title": "[MM][Gemma4] Respect max_soft_tokens in encoder budget",
-   "url": "https://github.com/vllm-project/vllm/pull/41799",
-   "mergedAt": "2026-05-06T12:54:43Z",
-   "author": "lesj0610",
-   "mergedBy": "Isotr0py",
-   "force_merged": false
-  },
-  {
-   "number": 40569,
-   "title": "[CPU][RISC-V] Auto-bind OMP threads and harden nobind path",
-   "url": "https://github.com/vllm-project/vllm/pull/40569",
-   "mergedAt": "2026-05-06T11:38:09Z",
-   "author": "lyd1992",
-   "mergedBy": "bigPYJ1151",
-   "force_merged": false
-  },
-  {
-   "number": 41734,
-   "title": "Fix some legacy checkpoints with deprecated `rope_type` values",
-   "url": "https://github.com/vllm-project/vllm/pull/41734",
-   "mergedAt": "2026-05-06T11:13:12Z",
-   "author": "hmellor",
-   "mergedBy": "DarkLight1337",
-   "force_merged": false
-  },
-  {
-   "number": 40390,
-   "title": "[Bugfix][Rocm]Aiter MoE re-uses existing tensor addresses after weight update.",
-   "url": "https://github.com/vllm-project/vllm/pull/40390",
-   "mergedAt": "2026-05-06T10:32:27Z",
-   "author": "yuankaichen-amd",
-   "mergedBy": "tjtanaa",
-   "force_merged": false
-  },
-  {
-   "number": 41794,
-   "title": "[Bugfix][CI] Fix Disaggregated test area path",
-   "url": "https://github.com/vllm-project/vllm/pull/41794",
-   "mergedAt": "2026-05-06T09:41:25Z",
-   "author": "NickLucche",
-   "mergedBy": "DarkLight1337",
-   "force_merged": false
-  },
-  {
-   "number": 40686,
-   "title": "fix(rocm): remove workaround causing invalid argument on Qwen3.5 with TP=2",
-   "url": "https://github.com/vllm-project/vllm/pull/40686",
-   "mergedAt": "2026-05-06T08:38:33Z",
-   "author": "aaab8b",
-   "mergedBy": "vllm-bot",
-   "force_merged": true
-  },
-  {
-   "number": 41344,
-   "title": "[XPU] Disable CUDA graph memory estimate on XPU platform",
-   "url": "https://github.com/vllm-project/vllm/pull/41344",
-   "mergedAt": "2026-05-06T08:38:18Z",
-   "author": "chaojun-zhang",
-   "mergedBy": "jikunshang",
-   "force_merged": false
-  },
-  {
-   "number": 40759,
-   "title": "[Examples] Resettle Disaggregated examples.",
-   "url": "https://github.com/vllm-project/vllm/pull/40759",
-   "mergedAt": "2026-05-06T08:20:39Z",
-   "author": "noooop",
-   "mergedBy": "vllm-bot",
-   "force_merged": true
-  },
-  {
-   "number": 40726,
-   "title": "[Bugfix] Fix codegen for unqualified names",
-   "url": "https://github.com/vllm-project/vllm/pull/40726",
-   "mergedAt": "2026-05-06T08:11:38Z",
-   "author": "Lucaskabela",
-   "mergedBy": "vllm-bot",
-   "force_merged": true
-  },
-  {
-   "number": 41318,
-   "title": "[Feat] dnnl build for AVX2 W8A8 Int8",
-   "url": "https://github.com/vllm-project/vllm/pull/41318",
-   "mergedAt": "2026-05-06T07:28:02Z",
-   "author": "tianmu-li",
-   "mergedBy": "bigPYJ1151",
-   "force_merged": false
-  },
-  {
-   "number": 41186,
-   "title": "[CPU] Add FP8 W8A16 linear support",
-   "url": "https://github.com/vllm-project/vllm/pull/41186",
-   "mergedAt": "2026-05-06T07:05:28Z",
-   "author": "yuwenzho",
-   "mergedBy": "bigPYJ1151",
-   "force_merged": false
-  },
-  {
-   "number": 40749,
-   "title": "[Bugfix] Skip PP sampled-token receive on last rank during async scheduling",
-   "url": "https://github.com/vllm-project/vllm/pull/40749",
-   "mergedAt": "2026-05-06T05:31:14Z",
-   "author": "wi-adam",
-   "mergedBy": "njhill",
-   "force_merged": false
-  },
-  {
-   "number": 41752,
-   "title": "[Spec Decode] Allow multimodal models with a warning",
-   "url": "https://github.com/vllm-project/vllm/pull/41752",
-   "mergedAt": "2026-05-06T05:16:45Z",
-   "author": "laviier",
-   "mergedBy": "vllm-bot",
-   "force_merged": true
-  },
-  {
-   "number": 37243,
-   "title": "[ROCm][CI] Refine gating tests",
-   "url": "https://github.com/vllm-project/vllm/pull/37243",
-   "mergedAt": "2026-05-06T05:05:20Z",
-   "author": "AndreasKaratzas",
-   "mergedBy": "khluu",
-   "force_merged": false
-  },
-  {
-   "number": 41387,
-   "title": "[Fix] Add missing stubs from cpu fp8 attention changes",
-   "url": "https://github.com/vllm-project/vllm/pull/41387",
-   "mergedAt": "2026-05-06T04:16:27Z",
-   "author": "tianmu-li",
-   "mergedBy": "bigPYJ1151",
-   "force_merged": false
-  },
-  {
-   "number": 40575,
-   "title": "[Build] Fall back to system libgomp when torch has no vendored copy",
-   "url": "https://github.com/vllm-project/vllm/pull/40575",
-   "mergedAt": "2026-05-06T03:42:03Z",
-   "author": "lyd1992",
-   "mergedBy": "bigPYJ1151",
-   "force_merged": false
-  },
-  {
-   "number": 41658,
-   "title": "[Mistral Tokenizer] allow more leniency in apply_chat_template",
-   "url": "https://github.com/vllm-project/vllm/pull/41658",
-   "mergedAt": "2026-05-06T02:56:16Z",
-   "author": "juliendenize",
-   "mergedBy": "vllm-bot",
-   "force_merged": true
-  },
-  {
-   "number": 41355,
-   "title": "[Frontend] Supports resubmitting output items with missing fields in Responses API",
-   "url": "https://github.com/vllm-project/vllm/pull/41355",
-   "mergedAt": "2026-05-06T02:21:34Z",
-   "author": "chaunceyjiang",
-   "mergedBy": "sfeng33",
-   "force_merged": false
-  },
-  {
-   "number": 41453,
-   "title": "[CI] Route part of B200 jobs to b200-k8s",
-   "url": "https://github.com/vllm-project/vllm/pull/41453",
-   "mergedAt": "2026-05-06T02:00:30Z",
-   "author": "khluu",
-   "mergedBy": "vllm-bot",
-   "force_merged": true
-  },
-  {
-   "number": 41575,
-   "title": "[ROCm][CI] Use vLLM generation defaults for DeepSeek prefetch-offload eval",
-   "url": "https://github.com/vllm-project/vllm/pull/41575",
-   "mergedAt": "2026-05-06T01:08:13Z",
-   "author": "AndreasKaratzas",
-   "mergedBy": "tjtanaa",
-   "force_merged": false
-  },
-  {
-   "number": 40415,
-   "title": "[CI] Automate Docker Hub release image publishing",
-   "url": "https://github.com/vllm-project/vllm/pull/40415",
-   "mergedAt": "2026-05-06T00:15:23Z",
-   "author": "khluu",
-   "mergedBy": "khluu",
-   "force_merged": false
   }
  ]
 }
